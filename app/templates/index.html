@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block style %}
+<link rel="stylesheet" href="../static/css/landing_style.css">
+{% endblock %}
+
+{% block head %}
+<title>Welcome to Carlos's Portfolio!</title>
+{% endblock %}
+
+{% block body %}
+<canvas id="canvas1"></canvas>
+<div style="height: 100vh;">
+    <div class="container-fluid d-flex align-items-center" style="height: 100%;">
+        <div class="container-fluid">
+            <div class="row">
+                <h1 class="col d-flex justify-content-center title">Hi, my name is Carlos Ricoveri!</h1>
+            </div>
+            <div class="row pt-2">
+                <h6 class="col d-flex justify-content-center subtitle">I am a software engineer with a passion for&nbsp;<em class="word1">technology</em>&nbsp;and&nbsp;<em class="word1">creating solutions</em>.</h6>
+            </div>
+            <div class="row pt-4 d-flex justify-content-center">
+                <a class="btn btn-large bg-niceBlue" href="#">Click here to see my portfolio!</a>
+            </div>
+            <div class="row pt-2">
+                <p class="col subtitle text1 d-flex justify-content-center">No time? Download my resume&nbsp;<a href="../static/files/CarlosERicoveri_Resume.pdf">here</a>.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="../static/scripts/landing_script.js"></script>
+{% endblock %}
