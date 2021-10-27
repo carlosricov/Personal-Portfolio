@@ -7,6 +7,7 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
+
 # Health endpoint.
 @app.route("/health")
 def health():
