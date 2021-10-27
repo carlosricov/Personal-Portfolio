@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    height: 100%;
+}
+
+.title {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: #282828;
+}
+
+.subtitle {
+    color: #282828;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: #282828;
+}
+
+.word1 {
+    color: #3500d3;
+}
+
+.text1 {
+    font-size: x-small;
+}
+
+.bg-niceBlue {
+    background: #3500d3;
+    color: white;
+}
+
+.bg-niceBlue:hover {
+    background: #3500d3;
+    color: white;
+}
+
+#canvas1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
