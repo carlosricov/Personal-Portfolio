@@ -13,6 +13,7 @@ def index():
 def health():
     return Response("Ok"), 200
 
+
 # Post landing page.
 @app.route("/portfolio")
 def portfolio():
