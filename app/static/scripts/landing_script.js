@@ -118,3 +118,4 @@ window.addEventListener('mouseout',
 
 init();
 animate();
+AOS.init();
