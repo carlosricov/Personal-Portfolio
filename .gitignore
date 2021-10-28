@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Environment stuff
+env/
+
+# Randoms
+.DS_Store
