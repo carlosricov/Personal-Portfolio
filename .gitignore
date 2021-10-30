@@ -129,7 +129,7 @@ dmypy.json
 .pyre/
 
 # Environment stuff
-env/
+python3-virtualenv/
 
 # Randoms
 .DS_Store
