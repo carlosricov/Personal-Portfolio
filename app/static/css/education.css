@@ -1,0 +1,19 @@
+.education-text {
+    color: #3500d3;
+}
+
+.date-text {
+    color: #282828;
+}
+
+hr.solid {
+    border-top: 1px solid #282828;
+}
+
+.card-color {
+    background-color: #3500d3;
+}
+
+.url-style {
+    color: white;
+}
