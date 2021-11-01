@@ -18,3 +18,9 @@ def health():
 @app.route("/portfolio")
 def portfolio():
     return render_template("portfolio.html")
+
+
+# Education page.
+@app.route("/education")
+def education():
+    return render_template("education.html")

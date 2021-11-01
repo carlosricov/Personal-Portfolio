@@ -1,14 +1,6 @@
 {% extends 'base.html' %}
 
 {% block style %}
-<link rel="stylesheet" href="../static/css/landing_style.css">
-<link rel="stylesheet" href="../static/css/portfolio.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
-<link rel="stylesheet" href="../static/css/brands.css">
-<link rel="stylesheet" href="../static/css/bootstrap-social.css">
-<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
-<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-<script defer src="../static/scripts/brands.js"></script>
 {% endblock %}
 
 {% block head %}
@@ -37,10 +29,10 @@
         <ul class="list-unstyled components pt-0">
             <p class="font-weight-bold">Navigation Menu</p>
             <li class="active">
-                <a href="#">About</a>
+                <a href="/portfolio">About</a>
             </li>
             <li>
-                <a href="#">Education</a>
+                <a href="/education">Education</a>
             </li>
             <li>
                 <a href="#">Skills</a>
@@ -78,7 +70,7 @@
                 <h1 class="container-fluid text-uppercase font-weight-bold mb-0 d-none d-md-flex justify-content-center" style="font-size: 3rem;">Carlos&nbsp;<span class="lastname-text text-uppercase font-weight-bold">Ricoveri</span></h1>
                 <h1 class="container-fluid text-uppercase font-weight-bold mb-0 d-md-none d-flex justify-content-center" style="font-size: 2.25rem;">Carlos&nbsp;<span class="lastname-text text-uppercase font-weight-bold" style="font-size: 2.25rem;">Ricoveri</span></h1>
                 <div class="container-fluid mb-4 d-flex">
-                    <p class="container-fluid subheading text-uppercase font-weight-bold d-inline justify-content-center text-center">Coral Springs, FL 33071&nbsp;&nbsp;&nbsp;(954) 871-3928&nbsp;&nbsp;&nbsp;<a href="mailto:carlos.ricoveri.cpe@gmail.com" class="hyp-text d-none d-md-inline">Carlos.Ricoveri.cpe@gmail.com</a><a href="mailto:carlos.ricoveri.cpe@gmail.com" class="hyp-text d-md-none d-flex justify-content-center">Gmail</a></p>    
+                    <p class="container-fluid subheading text-uppercase font-weight-bold d-inline justify-content-center text-center">Coral Springs, FL 33071&nbsp;&nbsp;&nbsp;<a href="mailto:carlos.ricoveri.cpe@gmail.com" class="hyp-text d-none d-md-inline">Carlos.Ricoveri.cpe@gmail.com</a><a href="mailto:carlos.ricoveri.cpe@gmail.com" class="hyp-text d-md-none d-flex justify-content-center">Gmail</a></p>    
                 </div>
                 <p class="about-text font-weight-light justify-content-left px-5 text-justify mb-0">Hi, I'm Carlos and I'm an experienced Back End Engineer. Currently, I'm a software engineer for a fortune 500 company where I adhere to industry-standard Agile and CI/CD practices, all the while helping support digital microservices. In my free time, I like to learn new skillsets in regards to growing as a software engineer. <br><br> This website runs using Flask and is hosted on an AWS instance. It's running on a Docker container while reverse proxying is done through Nginx. All of the DevOps configuration was done by myself, courtesy of a bunch of skills learned from my Summer fellowship @ Major League Hacking. <br><br>I'm eager to apply my ever-growing skillset to sectors where I can help create innovative and impactful solutions.</p>         
             </div>
@@ -91,14 +83,6 @@
 {% endblock %}
 
 {% block scripts %}
-<!-- jQuery CDN - Slim version (=without AJAX) -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<!-- Popper.JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-<!-- Bootstrap JS -->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-<!-- jQuery Custom Scroller CDN -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function () {
         $("#sidebar").mCustomScrollbar({
