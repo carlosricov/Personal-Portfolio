@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block style %}
+<link href="../static/css/coursework.css" rel="stylesheet">
+{% endblock %}
+
+{% block head %}
+<title>Coursework</title>
+{% endblock %}
+
+{% block body %}
+<div class="wrapper text-white">
+    <!-- Sidebar  -->
+    <nav id="sidebar">
+        <div id="dismiss">
+            <i class="fas fa-arrow-left"></i>
+        </div>
+
+        <div class="sidebar-header">
+            <div class="d-flex justify-content-center pt-3">
+                <img src="../static/img/carlos.jpg" alt="Carlos profile pic" class="img-circle shadow-lg">
+            </div>
+            <div class="container-fluid d-flex align-items-bottom justify-content-center pt-3">
+                <a class="btn btn-social-icon btn-linkedin mr-2" href="https://www.linkedin.com/in/carlosricoveri/"><span class="fab fa-linkedin"></span></a>
+                <a href="https://github.com/carlosricov" class="btn btn-social-icon btn-github"><span class="fab fa-github"></span></a>
+            </div>
+        </div>
+
+        <ul class="list-unstyled components pt-0">
+            <p class="font-weight-bold">Navigation Menu</p>
+            <li class="active">
+                <a href="/portfolio">About</a>
+            </li>
+            <li>
+                <a href="/education">Education</a>
+            </li>
+            <li>
+                <a href="#">Skills</a>
+            </li>
+            <li>
+                <a href="#">Work Experience</a>
+            </li>
+            <li>
+                <a href="#">Projects</a>
+            </li>
+            <li>
+                <a href="https://github.com/carlosricov/Personal-Portfolio">Website Repo</a>
+            </li>
+        </ul>
+        <div class="container-fluid" id="but2">
+            <a href="../static/files/CarlosERicoveri_Resume.pdf" download><button class="btn btn-block btn-success d-flex align-items-center justify-content-center">Download Resume</button></a>
+            <div class="container-fluid text-center">
+                <p id="side-footer">Powered by <a href="https://flask.palletsprojects.com/en/2.0.x/" style="color: white; text-decoration:underline;">Flask</a>.</p>
+            </div>
+        </div>
+    </nav>
+</div>
+{% endblock %}
