@@ -1,19 +1,86 @@
-.education-text {
-    color: #3500d3;
+body {
+    background-color: black;
 }
 
-.date-text {
-    color: #282828;
+html {
+    scroll-behavior: smooth;
 }
 
-hr.solid {
-    border-top: 1px solid #282828;
+#sec1 {
+    background-image: url(../img/header.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 125vh;
+    min-width: 100%;
 }
 
-.card-color {
-    background-color: #3500d3;
+#sec2 {
+    height: 100vh;
+    width: 100%;
 }
 
-.url-style {
+.text-style {
     color: white;
+    font-size: 5rem;
+    mix-blend-mode:soft-light;
 }
+
+.text-style2 {
+    color: white;
+    font-size: 3rem;
+    mix-blend-mode:soft-light;   
+}
+
+.scroll-down {
+    height: 3rem;
+    width: 1.75rem;
+    border: 0.135rem solid white;
+    mix-blend-mode: soft-light;
+    border-radius: 3rem;
+    cursor: pointer;   
+}
+
+.ptr::before,
+.ptr::after {
+    content: '';
+    border: 0.135rem solid white;
+    position: absolute;
+    height: 0.667rem;
+    width: 0.667rem;
+    transform: rotate(45deg);
+    border-top: transparent;
+    border-left: transparent;
+    mix-blend-mode: soft-light;
+    margin-top: -0.1rem;
+    animation: ptr 1s ease-in-out infinite;
+}
+
+.ptr::after {
+    margin-top: -0.05rem;
+    animation-delay: .3s;
+}
+
+@keyframes ptr {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        margin-top: 1.9rem;
+    }
+}
+
+.wrap {
+    /* backdrop-filter: blur(4px); */
+    height: 100%;
+    width: 100%;
+    mix-blend-mode: soft-light;
+}
+
