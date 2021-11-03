@@ -1,7 +1,6 @@
 {% extends 'base.html' %}
 
 {% block style %}
-<link href="../static/css/coursework.css" rel="stylesheet">
 {% endblock %}
 
 {% block head %}
@@ -9,6 +8,7 @@
 {% endblock %}
 
 {% block body %}
+<canvas id="canvas1"></canvas>
 <div class="wrapper text-white">
     <!-- Sidebar  -->
     <nav id="sidebar">
@@ -28,10 +28,10 @@
 
         <ul class="list-unstyled components pt-0">
             <p class="font-weight-bold">Navigation Menu</p>
-            <li class="active">
+            <li>
                 <a href="/portfolio">About</a>
             </li>
-            <li>
+            <li class="active">
                 <a href="/education">Education</a>
             </li>
             <li>
@@ -54,5 +54,50 @@
             </div>
         </div>
     </nav>
+
+    <!-- Page Content  -->
+    <div id="content">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+            <div class="container-fluid">
+                <button type="button" id="sidebarCollapse" class="btn btn-bg-transparent text-white shadow-sm">
+                    <i class="fas fa-align-left"></i>
+                    <span>Toggle Sidebar</span>
+                </button>
+            </div>
+        </nav>
+        <section class="d-flex align-items-top">
+            <div class="container-fluid pb-0">
+                <h1 class="container-fluid text-uppercase font-weight-bold mb-0 d-flex justify-content-center" style="font-size: 3rem;">Coursework</h1>
+            </div>
+        </section>
+        
+
+    </div>
 </div>
+{% endblock %}
+
+{% block scripts %}
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#sidebar").mCustomScrollbar({
+            theme: "minimal"
+        });
+
+        $('#dismiss, .overlay').on('click', function () {
+            $('#sidebar').removeClass('active');
+            $('.overlay').removeClass('active');
+            $('body').removeClass('active');
+        });
+
+        $('#sidebarCollapse').on('click', function () {
+            $('#sidebar').addClass('active');
+            $('.overlay').addClass('active');
+            $('body').addClass('active');
+            $('.collapse.in').toggleClass('in');
+            $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+        });
+    });
+</script>
+<script src="../static/scripts/landing_script.js"></script>
+<script type="text/javascript" src="../static/scripts/sidebar.js"></script>
 {% endblock %}
