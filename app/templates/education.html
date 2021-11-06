@@ -11,31 +11,133 @@
 
 {% block body %}
 <section id="sec1">
-    <div class="wrap" id="wrap1">
-        <div class="container-fluid d-flex justify-content-center" data-aos="fade-down" data-aos-duration="3000">
-            <h1 class="text-style font-weight-bold pt-5 d-none d-md-inline">Education</h1>
-            <h1 class="text-style2 font-weight-bold pt-5 d-md-none">Education</h1>
+    <nav id="sidebar">
+        <div id="dismiss">
+            <i class="fas fa-arrow-left"></i>
         </div>
-        <div class="container-fluid d-flex justify-content-center mt-5" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="2000">
+
+        <div class="sidebar-header">
+            <div class="d-flex justify-content-center pt-3">
+                <img src="../static/img/carlos.jpg" alt="Carlos profile pic" class="img-circle shadow-lg">
+            </div>
+            <div class="container-fluid d-flex align-items-bottom justify-content-center pt-3">
+                <a class="btn btn-social-icon btn-linkedin mr-2" href="https://www.linkedin.com/in/carlosricoveri/"><span class="fab fa-linkedin"></span></a>
+                <a href="https://github.com/carlosricov" class="btn btn-social-icon btn-github"><span class="fab fa-github"></span></a>
+            </div>
+        </div>
+
+        <ul class="list-unstyled components pt-0">
+            <p class="font-weight-bold">Navigation Menu</p>
+            <li>
+                <a href="/portfolio">About</a>
+            </li>
+            <li class="active">
+                <a href="#">Education</a>
+            </li>
+            <li>
+                <a href="#">Skills</a>
+            </li>
+            <li>
+                <a href="#">Work Experience</a>
+            </li>
+            <li>
+                <a href="#">Projects</a>
+            </li>
+            <li>
+                <a href="https://github.com/carlosricov/Personal-Portfolio">Website Repo</a>
+            </li>
+        </ul>
+        <div class="container-fluid" id="but2">
+            <a href="../static/files/CarlosERicoveri_Resume.pdf" download><button class="btn btn-block btn-success d-flex align-items-center justify-content-center">Download Resume</button></a>
+            <div class="container-fluid text-center">
+                <p id="side-footer">Powered by <a href="https://flask.palletsprojects.com/en/2.0.x/" style="color: white; text-decoration:underline;">Flask</a>.</p>
+            </div>
+        </div>
+    </nav>
+    <div class="wrap" id="wrap1">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+            <div class="container-fluid">
+                <button type="button" id="sidebarCollapse" class="btn btn-bg-transparent text-white shadow-sm">
+                    <i class="fas fa-align-left"></i>
+                    <span>Toggle Sidebar</span>
+                </button>
+            </div>
+        </nav>
+        <div class="container-fluid d-flex justify-content-center" data-aos="fade-down" data-aos-duration="3000">
+            <h1 class="text-style font-weight-bold pt-5 d-none d-md-inline text-center">Education</h1>
+            <h1 class="text-style2 font-weight-bold pt-5 d-md-none text-center">Education</h1>
+        </div>
+        <div class="container-fluid d-none d-md-flex justify-content-center mt-4" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="2000">
             <a href="#sec2">
                 <div class="scroll-down d-flex justify-content-center">
                     <div class="ptr d-flex justify-content-center"></div>
                 </div>
             </a>
         </div>
+        <div class="container-fluid d-flex d-md-none justify-content-center mt-3" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="2000">
+            <a href="#sec2">
+                <div class="scroll-down2 d-flex justify-content-center">
+                    <div class="ptr2 d-flex justify-content-center"></div>
+                </div>
+            </a>
+        </div>
     </div>
 </section>
-<section id="sec2">
-    <div class="container">
-        <h1>Second Section</h1>
+<section class="d-flex align-items-center justify-content-center" id="sec2">
+    <div class="container-fluid">
+        <div class="container-fluid d-flex justify-content-center align-items-center">
+            <h1 class="font-weight-bold text-center sec2-title d-none d-md-inline">University of <span style="color: #3500d3;">Central Florida</span></h1>
+            <h1 class="font-weight-bold text-center sec2-title d-md-none">Univ. <span style="color: #3500d3;">Central Florida</span></h1>
+        </div>
+        <div class="container-fluid d-flex justify-content-center">
+            <h6 class="font-weight-light text-center sec2-sub d-none d-md-inline">B.S Computer Engineering <span style="color:#3500d3;">•</span>&nbsp;Aug 2016 - May 2021</h6>
+            <h6 class="font-weight-light text-center sec2-sub d-md-none">B.S Computer Engineering<br>Aug 2016 - May 2021</h6>
+        </div>
+        <hr>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="font-weight-bold sec2-sub">GPA</h3>
+                    <hr class="div-style">
+                    <h6 class="font-weight-light">3.5 out of 4.0</h6>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="font-weight-bold sec2-sub">Website</h3>
+                    <hr class="div-style">
+                    <h6 class="font-weight-light card-link-clr"><a target="_blank" href="https://ucf.edu">Go Knights!</a></h6>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="font-weight-bold sec2-sub">Dean's List</h3>
+                    <hr class="div-style">
+                    <h6 class="font-weight-light">Spring 2017 - Summer 2019</h6>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
-
 {% endblock %}
 
 {% block scripts %}
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>AOS.init();</script>
 <script type="text/javascript" src="../static/scripts/sidebar.js"></script>
-<script type="text/javascript" src="../static/scripts/scrollfade.js"></script>
+<script>
+    if (screen && screen.width > 900) {
+        document.write('<script type="text/javascript" src="../static/scripts/scrollfadeLG.js"><\/script>');
+    }
+</script>
+<script>
+    if (screen && screen.width > 600) {
+        document.write('<script type="text/javascript" src="../static/scripts/scrollfadeMD.js"><\/script>');
+    }
+</script>
+<script>
+    if (screen && screen.width < 600) {
+        document.write('<script type="text/javascript" src="../static/scripts/scrollfadeSM.js"><\/script>');
+    }
+</script>
 {% endblock %}
