@@ -27,3 +27,9 @@ def portfolio():
 @app.route("/education")
 def education():
     return render_template("education.html")
+
+
+# Coursework page.
+@app.route("/coursework")
+def coursework():
+    return render_template("coursework.html")

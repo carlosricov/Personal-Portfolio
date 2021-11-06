@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 
 {% block style %}
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link href="../static/css/education.css" rel="stylesheet">
 {% endblock %}
 
@@ -9,9 +10,7 @@
 {% endblock %}
 
 {% block body %}
-<canvas id="canvas1"></canvas>
-<div class="wrapper text-white">
-    <!-- Sidebar  -->
+<section id="sec1">
     <nav id="sidebar">
         <div id="dismiss">
             <i class="fas fa-arrow-left"></i>
@@ -33,7 +32,7 @@
                 <a href="/portfolio">About</a>
             </li>
             <li class="active">
-                <a href="/education">Education</a>
+                <a href="#">Education</a>
             </li>
             <li>
                 <a href="#">Skills</a>
@@ -55,9 +54,7 @@
             </div>
         </div>
     </nav>
-
-    <!-- Page Content  -->
-    <div id="content">
+    <div class="wrap" id="wrap1">
         <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
             <div class="container-fluid">
                 <button type="button" id="sidebarCollapse" class="btn btn-bg-transparent text-white shadow-sm">
@@ -66,101 +63,81 @@
                 </button>
             </div>
         </nav>
-        <section class="d-flex align-items-top">
-            <div class="container-fluid pb-0">
-                <h1 class="container-fluid text-uppercase font-weight-bold mb-0 d-flex justify-content-center" style="font-size: 3rem;">Education</h1>
-            </div>
-        </section>
-        <section class="d-flex justify-content-left pl-3 pt-4">
-            <div class="container-fluid">
-                <h3 class="education-text text-left font-weight-bold d-none d-md-inline">University of Central Florida <span class="font-weight-bold date-text" style="font-size: small;">Aug 2016 - May 2021</span></h3>
-                <h3 class="education-text text-left font-weight-bold d-md-none">Univ. Central Florida<br><span class="font-weight-bold date-text" style="font-size: small;">Aug 2016 - May 2021</span></h3>
-                <h5 class="date-text text-left font-weight-light">B.S Computer Engineering</h5>
-                <hr class="solid">
-                <div class="card-deck">
-                    <div class="card card-color">
-                        <div class="card-body">
-                            <h5 class="card-title font-weight-bold text-center">GPA</h5>
-                            <hr class="solid">
-                            <p class="font-weight-light text-center mb-0">3.5 out of 4.0</p>
-                        </div>
-                    </div>
-                    <div class="card card-color">
-                        <div class="card-body">
-                            <h5 class="card-title font-weight-bold text-center">Coursework</h5>
-                            <hr class="solid">
-                            <p class="mb-0 mx-0"><a href="#" class="font-weight-light d-flex justify-content-center url-style mb-0 mx-0 px-0">View Coursework</a></p>
-                        </div>
-                    </div>
-                    <div class="card card-color">
-                        <div class="card-body">
-                            <h5 class="card-title font-weight-bold text-center">Dean's List</h5>
-                            <hr class="solid">
-                            <p class="font-weight-light text-center mb-0">Spring'17 - Fall'18</p>
-                        </div>
-                    </div>
+        <div class="container-fluid d-flex justify-content-center" data-aos="fade-down" data-aos-duration="3000">
+            <h1 class="text-style font-weight-bold pt-5 d-none d-md-inline text-center">Education</h1>
+            <h1 class="text-style2 font-weight-bold pt-5 d-md-none text-center">Education</h1>
+        </div>
+        <div class="container-fluid d-none d-md-flex justify-content-center mt-4" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="2000">
+            <a href="#sec2">
+                <div class="scroll-down d-flex justify-content-center">
+                    <div class="ptr d-flex justify-content-center"></div>
                 </div>
-            </div>
-        </section>
-        <section class="d-flex justify-content-left pl-3 pt-5">
-            <div class="container-fluid">
-                <h3 class="education-text text-left font-weight-bold d-none d-md-inline">J.P. Taravella High School <span class="font-weight-bold date-text" style="font-size: small;">Aug 2012 - Jun 2016</span></h3>
-                <h3 class="education-text text-left font-weight-bold d-md-none">J.P. Taravella HS<br><span class="font-weight-bold date-text" style="font-size: small;">Aug 2012 - Jun 2016</span></h3>
-                <h5 class="date-text text-left font-weight-light">High School Diploma</h5>
-                <hr class="solid">
-                <div class="card-deck">
-                    <div class="card card-color">
-                        <div class="card-body">
-                            <h5 class="card-title font-weight-bold text-center">GPA</h5>
-                            <hr class="solid">
-                            <p class="font-weight-light text-center mb-0">4.0 out of 4.0</p>
-                        </div>
-                    </div>
-                    <div class="card card-color">
-                        <div class="card-body">
-                            <h5 class="card-title font-weight-bold text-center">School Website</h5>
-                            <hr class="solid">
-                            <p class="mb-0 mx-0"><a href="https://www.browardschools.com/taravella" class="font-weight-light d-flex justify-content-center url-style mb-0 mx-0 px-0">View Website</a></p>
-                        </div>
-                    </div>
-                    <div class="card card-color">
-                        <div class="card-body">
-                            <h5 class="card-title font-weight-bold text-center">Class Standing</h5>
-                            <hr class="solid">
-                            <p class="font-weight-light text-center mb-0">Top 1%</p>
-                        </div>
-                    </div>
+            </a>
+        </div>
+        <div class="container-fluid d-flex d-md-none justify-content-center mt-3" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="2000">
+            <a href="#sec2">
+                <div class="scroll-down2 d-flex justify-content-center">
+                    <div class="ptr2 d-flex justify-content-center"></div>
                 </div>
-            </div>
-        </section>
+            </a>
+        </div>
     </div>
-</div>
-
-<div class="overlay"></div>
-
+</section>
+<section class="d-flex align-items-center justify-content-center" id="sec2">
+    <div class="container-fluid">
+        <div class="container-fluid d-flex justify-content-center align-items-center">
+            <h1 class="font-weight-bold text-center sec2-title d-none d-md-inline">University of <span style="color: #3500d3;">Central Florida</span></h1>
+            <h1 class="font-weight-bold text-center sec2-title d-md-none">Univ. <span style="color: #3500d3;">Central Florida</span></h1>
+        </div>
+        <div class="container-fluid d-flex justify-content-center">
+            <h6 class="font-weight-light text-center sec2-sub d-none d-md-inline">B.S Computer Engineering <span style="color:#3500d3;">•</span>&nbsp;Aug 2016 - May 2021</h6>
+            <h6 class="font-weight-light text-center sec2-sub d-md-none">B.S Computer Engineering<br>Aug 2016 - May 2021</h6>
+        </div>
+        <hr>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="font-weight-bold sec2-sub">GPA</h3>
+                    <hr class="div-style">
+                    <h6 class="font-weight-light">3.5 out of 4.0</h6>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="font-weight-bold sec2-sub">Website</h3>
+                    <hr class="div-style">
+                    <h6 class="font-weight-light card-link-clr"><a target="_blank" href="https://ucf.edu">Go Knights!</a></h6>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="font-weight-bold sec2-sub">Dean's List</h3>
+                    <hr class="div-style">
+                    <h6 class="font-weight-light">Spring 2017 - Summer 2019</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 {% endblock %}
 
 {% block scripts %}
-<script type="text/javascript">
-    $(document).ready(function () {
-        $("#sidebar").mCustomScrollbar({
-            theme: "minimal"
-        });
-
-        $('#dismiss, .overlay').on('click', function () {
-            $('#sidebar').removeClass('active');
-            $('.overlay').removeClass('active');
-            $('body').removeClass('active');
-        });
-
-        $('#sidebarCollapse').on('click', function () {
-            $('#sidebar').addClass('active');
-            $('.overlay').addClass('active');
-            $('body').addClass('active');
-            $('.collapse.in').toggleClass('in');
-            $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-        });
-    });
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+<script type="text/javascript" src="../static/scripts/sidebar.js"></script>
+<script>
+    if (screen && screen.width > 900) {
+        document.write('<script type="text/javascript" src="../static/scripts/scrollfadeLG.js"><\/script>');
+    }
 </script>
-<script src="../static/scripts/landing_script.js"></script>
+<script>
+    if (screen && screen.width > 600) {
+        document.write('<script type="text/javascript" src="../static/scripts/scrollfadeMD.js"><\/script>');
+    }
+</script>
+<script>
+    if (screen && screen.width < 600) {
+        document.write('<script type="text/javascript" src="../static/scripts/scrollfadeSM.js"><\/script>');
+    }
+</script>
 {% endblock %}
