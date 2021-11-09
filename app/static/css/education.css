@@ -22,6 +22,11 @@ html {
     width: 100%;
 }
 
+#sec3 {
+    height: 100vh;
+    width: 100%;
+}
+
 /* Section wrap */
 .wrap {
     /* backdrop-filter: blur(4px); */
@@ -54,6 +59,14 @@ html {
     font-size: 3rem;
 }
 
+.sec2-title {
+    color: white;
+}
+
+.sec2-sub {
+    color: #282828;
+}
+
 /* Scroll down indicator + animation */
 .scroll-down {
     height: 4rem;
@@ -66,6 +79,18 @@ html {
     height: 2rem;
     width: 1.25rem;
     mix-blend-mode: soft-light;
+    cursor: pointer;   
+}
+
+.scroll-down3 {
+    height: 4rem;
+    width: 2.5rem;
+    cursor: pointer;   
+}
+
+.scroll-down4 {
+    height: 2rem;
+    width: 1.25rem;
     cursor: pointer;   
 }
 
@@ -95,6 +120,34 @@ html {
     border-top: transparent;
     border-left: transparent;
     mix-blend-mode: soft-light;
+    margin-top: -0.05rem;
+    animation: ptr 2s ease-in-out infinite;
+}
+
+.ptr3::before,
+.ptr3::after {
+    content: '';
+    border: 0.135rem solid white;
+    position: absolute;
+    height: 2rem;
+    width: 2rem;
+    transform: rotate(45deg);
+    border-top: transparent;
+    border-left: transparent;
+    margin-top: -0.1rem;
+    animation: ptr 2s ease-in-out infinite;
+}
+
+.ptr4::before,
+.ptr4::after {
+    content: '';
+    border: 0.065rem solid white;
+    position: absolute;
+    height: 1.5rem;
+    width: 1.5rem;
+    transform: rotate(45deg);
+    border-top: transparent;
+    border-left: transparent;
     margin-top: -0.05rem;
     animation: ptr 2s ease-in-out infinite;
 }
@@ -141,12 +194,46 @@ html {
     }
 }
 
-.sec2-title {
-    color: white;
+.ptr3::after {
+    margin-top: -0.1rem;
+    animation-delay: .4s;
 }
 
-.sec2-sub {
-    color: #282828;
+@keyframes ptr3 {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        margin-top: 2rem;
+    }
+}
+
+.ptr4::after {
+    margin-top: -0.02rem;
+    animation-delay: .4s;
+}
+
+@keyframes ptr4 {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        margin-top: 1rem;
+    }
 }
 
 /* Card style */
