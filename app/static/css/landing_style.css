@@ -9,6 +9,7 @@ body {
     height: 100%;
 }
 
+/* Header style */
 .title {
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -22,6 +23,7 @@ body {
     white-space: normal;
 }
 
+/* Text style */
 .word1 {
     color: #3500d3;
     font-size: 1rem;
@@ -30,6 +32,16 @@ body {
 
 .text1 {
     font-size: x-small;
+}
+
+.hype-text {
+    color: #3500d3;
+    text-decoration: underline;
+}
+
+.hype-text:hover {
+    color: white;
+    text-decoration: underline;
 }
 
 .bg-niceBlue {
@@ -45,22 +57,13 @@ body {
 .transition-fade {
     transition: 0.4s;
     opacity: 1;
-  }
+}
   
   html.is-animating .transition-fade {
     opacity: 0;
-  }
-
-.hype-text {
-    color: #3500d3;
-    text-decoration: underline;
-}
-
-.hype-text:hover {
-    color: white;
-    text-decoration: underline;
 }
   
+/* Animated background */
 #canvas1 {
     position: fixed;
     top: 0;
