@@ -6,6 +6,7 @@ hr {
     width: 100%;
 }
 
+/* Depends on viewport. */
 #hr1 {
     border: 0.5px solid #3500d3;
 }
@@ -14,6 +15,7 @@ hr {
     border: 0.25px solid #3500d3;
 }
 
+/* Section styles. */
 #sec0 {
     height: 125vh;
 }
@@ -25,6 +27,8 @@ hr {
     justify-content: center;
     position: relative;
 }
+
+/* Section 1 text style. */
 .text-style {
     color: white;
     font-size: 4rem;
@@ -44,6 +48,8 @@ hr {
     color: #282828;
     font-size: 1rem;
 }
+
+/* SVG circle placeholders. */
 
 .circle {
     position: relative;
@@ -77,6 +83,7 @@ hr {
     transform: scale(1.25);
 }
 
+/* Circle connector. */
 .vert {
     position: absolute;
     top: 20%;
@@ -88,6 +95,7 @@ hr {
     transform: translate(-50%, 0);
 }
 
+/* SVG styling. */
 .img-style {
     position: absolute;
     top: 50%;
@@ -97,6 +105,7 @@ hr {
     transform:translate(-50%, -50%);
 }
 
+/* SVG text styling. */
 .circ-text {
     position: absolute;
     top: 50%;
@@ -115,13 +124,7 @@ hr {
     font-size: 0.75rem;
 }
 
-.card {
-    background-color: transparent;
-    text-align: center;
-    border: 1px solid #3500d3;
-    border-radius: 10%;
-}
-
+/* Section 2 text styling. */
 .sec2-style {
     color: white;
     font-size: 2.5rem;
@@ -142,6 +145,7 @@ hr {
     font-size: 1rem;
 }
 
+/* Course name text styling based on viewport. */
 .course-text {
     color: white;
     font-size: 1rem;
@@ -157,6 +161,7 @@ hr {
     font-size: 0.9rem;
 }
 
+/* Button placement and styling. */
 .cont-style {
     position: absolute;
     bottom: 5%;
