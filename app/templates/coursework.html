@@ -10,13 +10,11 @@
 
 {% block body %}
 <canvas id="canvas1"></canvas>
-<div class="wrapper text-white">
-    <!-- Sidebar  -->
+<section id="sec0">
     <nav id="sidebar">
         <div id="dismiss">
             <i class="fas fa-arrow-left"></i>
         </div>
-
         <div class="sidebar-header">
             <div class="d-flex justify-content-center pt-3">
                 <img src="../static/img/carlos.jpg" alt="Carlos profile pic" class="img-circle shadow-lg">
@@ -26,7 +24,6 @@
                 <a href="https://github.com/carlosricov" class="btn btn-social-icon btn-github"><span class="fab fa-github"></span></a>
             </div>
         </div>
-
         <ul class="list-unstyled components pt-0">
             <p class="font-weight-bold">Navigation Menu</p>
             <li>
@@ -58,27 +55,167 @@
             </div>
         </div>
     </nav>
-
-    <!-- Page Content  -->
-    <div id="content">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
-            <div class="container-fluid">
-                <button type="button" id="sidebarCollapse" class="btn btn-bg-transparent text-white shadow-sm">
-                    <i class="fas fa-align-left"></i>
-                    <span>Toggle Sidebar</span>
-                </button>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+        <div class="container-fluid">
+            <button type="button" id="sidebarCollapse" class="btn btn-bg-transparent text-white shadow-sm">
+                <i class="fas fa-align-left"></i>
+                <span>Toggle Sidebar</span>
+            </button>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="container-fluid d-flex justify-content-center">
+            <h1 class="text-style font-weight-bold pt-5 d-none d-md-inline text-center">Coursework</h1>
+            <h1 class="text-style2 font-weight-bold pt-5 d-md-none text-center">Coursework</h1>
+        </div>
+        <div class="container-fluid d-flex justify-content-center">
+            <h5 class="sub-text font-weight-bold d-none d-md-inline text-center">Programming <span style="color:#3500d3;">•</span>&nbsp;Computer Engineering <span style="color:#3500d3;">•</span>&nbsp;Electrical <span style="color:#3500d3;">•</span>&nbsp;Mathematics</h5>
+            <h5 class="sub-text2 font-weight-bold d-md-none text-center">Programming <span style="color:#3500d3;">•</span>&nbsp;Comp Engr<br>Electrical <span style="color:#3500d3;">•</span>&nbsp;Mathematics</h5>
+        </div>
+        <div class="container-fluid pt-5" style="position: relative;">
+            <div class="container-fluid d-flex justify-content-center pt-1">
+                <div class="circle d-none d-md-flex">
+                    <a href="#sec1"><img class="img-style img-circle" src="../static/img/programming.svg"></a>
+                    <h6 class="circ-text">Programming</h6>
+                </div>
+                <div class="circle2 d-md-none">
+                    <a href="#sec1"><img class="img-style img-circle" src="../static/img/programming.svg"></a>
+                    <h6 class="circ-text2">Programming</h6>
+                </div>
             </div>
-        </nav>
-        <section class="d-flex align-items-top">
-            <div class="container-fluid pb-0">
-                <h1 class="container-fluid text-uppercase font-weight-bold mb-0 d-flex justify-content-center" style="font-size: 3rem;">Coursework</h1>
+            <div class="container-fluid d-flex justify-content-center pt-5">
+                <div class="circle d-none d-md-inline">
+                    <a href="#sec2"><img class="img-style img-circle" src="../static/img/cpe.svg"></a>
+                    <h6 class="circ-text">Computer Engineering</h6>
+                </div>
+                <div class="circle2 d-md-none">
+                    <a href="#sec2"><img class="img-style img-circle" src="../static/img/cpe.svg"></a>
+                    <h6 class="circ-text2">Comp. Engr.</h6>
+                </div>
             </div>
-        </section>
-        
-
+            <div class="container-fluid d-flex justify-content-center pt-5">
+                <div class="circle d-none d-md-inline">
+                    <a href="#sec3"><img class="img-style img-circle" src="../static/img/ee.svg"></a>
+                    <h6 class="circ-text">Electrical</h6>
+                </div>
+                <div class="circle2 d-md-none">
+                    <a href="#sec3"><img class="img-style img-circle" src="../static/img/ee.svg"></a>
+                    <h6 class="circ-text2">Electrical</h6>
+                </div>
+            </div>
+            <div class="container-fluid d-flex justify-content-center pt-5">
+                <div class="circle d-none d-md-inline">
+                    <a href="#sec4"><img class="img-style img-circle" src="../static/img/math.svg"></a>
+                    <h6 class="circ-text">Mathematics</h6>
+                </div>
+                <div class="circle2 d-md-none">
+                    <a href="#sec4"><img class="img-style img-circle" src="../static/img/math.svg"></a>
+                    <h6 class="circ-text2">Math</h6>
+                </div>
+            </div>
+            <div class="vert"></div>
+        </div>
     </div>
-</div>
-<div class="overlay"></div>
+    <div class="overlay"></div>
+</section>
+<section id="sec1">
+    <div class="container-fluid">
+        <div class="container-fluid d-flex justify-content-center">
+            <h1 class="sec2-style text-center font-weight-bold d-none d-md-inline">Programming <span style="color: #3500d3;">Coursework</span></h1>
+            <h1 class="sec2-style2 text-center font-weight-bold d-md-none">Programming <span style="color: #3500d3;">Coursework</span></h1>
+        </div>
+        <div class="container-fluid d-flex justify-content-center">
+            <h6 class="sec2-sub text-center d-none d-md-inline">Courses involving languages like C, Java, Python, and more.</h6>
+            <h6 class="sec2-sub2 text-center d-md-none">Courses involving languages like C, Java, Python, and more.</h6>
+        </div>
+        <hr id="hr1" class="d-none d-md-flex">
+        <hr id="hr2" class="d-md-none">
+        <div class="container-fluid d-flex justify-content-center px-5 pt-3">
+            <p class="course-text font-weight-light text-center d-none d-lg-inline">Intro to C <span style="color:#3500d3;">•</span>&nbsp;Data Structures & Algorithms with C <span style="color:#3500d3;">•</span>&nbsp;Data Structures & Algorithms with Java <span style="color:#3500d3;">•</span>&nbsp;Java Reflection API <span style="color:#3500d3;">•</span>&nbsp;Java Streams API<br>Logging with Java <span style="color:#3500d3;">•</span>&nbsp;Functional Programming with Java <span style="color:#3500d3;">•</span>&nbsp;Asynchronous Programming with Java <span style="color:#3500d3;">•</span>&nbsp;Event Bus & Messaging<br>Imperative Programming with Python <span style="color:#3500d3;">•</span>&nbsp;Intro to HTML & CSS <span style="color:#3500d3;">•</span>&nbsp; Principles of OOP <span style="color:#3500d3;">•</span>&nbsp; Software Development Life Cycle <span style="color:#3500d3;">•</span>&nbsp;HDL with Verilog</p>
+        </div>
+        <div class="container-fluid d-flex justify-content-center px-5">
+            <p class="course-text2 font-weight-light text-justify d-none d-sm-inline d-lg-none">Intro to C <span style="color:#3500d3;">•</span>&nbsp;Data Structures & Algorithms with C <span style="color:#3500d3;">•</span>&nbsp;Data Structures & Algorithms with Java <span style="color:#3500d3;">•</span>&nbsp;Java Reflection API <span style="color:#3500d3;">•</span>&nbsp;Java Streams API<br><br>Logging with Java <span style="color:#3500d3;">•</span>&nbsp;Functional Programming with Java <span style="color:#3500d3;">•</span>&nbsp;Asynchronous Programming with Java <span style="color:#3500d3;">•</span>&nbsp;Event Bus & Messaging<br><br>Imperative Programming with Python <span style="color:#3500d3;">•</span>&nbsp;Intro to HTML & CSS <span style="color:#3500d3;">•</span>&nbsp; Principles of OOP <span style="color:#3500d3;">•</span>&nbsp; Software Development Life Cycle <span style="color:#3500d3;">•</span>&nbsp;HDL with Verilog</p>
+        </div>
+        <div class="container-fluid d-flex justify-content-center px-5">
+            <p class="course-text3 font-weight-light text-justify d-sm-none">Intro to C <span style="color:#3500d3;">•</span>&nbsp;Data Structures & Algorithms with C & Java <span style="color:#3500d3;">•</span>&nbsp;Java Reflection API <span style="color:#3500d3;">•</span>&nbsp;Java Streams API <span style="color:#3500d3;">•</span>&nbsp;Logging with Java<br><br>Event Bus & Messaging <span style="color:#3500d3;">•</span>&nbsp;Asynchronous Programming with Java <span style="color:#3500d3;">•</span>&nbsp;Functional Programming with Java<br><br>Python Imperative Programming <span style="color:#3500d3;">•</span>&nbsp;Intro to HTML & CSS <span style="color:#3500d3;">•</span>&nbsp;Software Development Life Cycle <span style="color:#3500d3;">•</span>&nbsp;Principles of OOP <span style="color:#3500d3;">•</span>&nbsp;HDL with Verilog</p>
+        </div>
+    </div>
+    <div class="container-fluid cont-style d-flex justify-content-center">
+        <a href="#sec0"><button class="btn btn-custom mr-2">Back to Top</button></a>
+        <a href="#sec2"><button class="btn btn-custom ml-2">Next Section</button></a>
+    </div>
+</section>
+<section id="sec2">
+    <div class="container-fluid">
+        <div class="container-fluid d-flex justify-content-center">
+            <h1 class="sec2-style text-center font-weight-bold d-none d-md-inline">Computer Engineering <span style="color: #3500d3;">Coursework</span></h1>
+            <h1 class="sec2-style2 text-center font-weight-bold d-md-none">Comp. Engr. <span style="color: #3500d3;">Coursework</span></h1>
+        </div>
+        <div class="container-fluid d-flex justify-content-center">
+            <h6 class="sec2-sub text-center d-none d-md-inline">General computer engineering concepts like architectures, networks, and operating systems.</h6>
+            <h6 class="sec2-sub2 text-center d-md-none">General computer engineering concepts like architectures, networks, and operating systems.</h6>
+        </div>
+        <hr id="hr1" class="d-none d-md-flex">
+        <hr id="hr2" class="d-md-none">
+        <div class="container-fluid d-flex justify-content-center px-5 pt-3">
+            <p class="course-text font-weight-light text-center d-none d-lg-inline">Digital Systems with Artix-7 FPGA <span style="color:#3500d3;">•</span>&nbsp;Computer Organization & Structure with MIPS <span style="color:#3500d3;">•</span>&nbsp;Embedded Systems with MSP430 <span style="color:#3500d3;">•</span>&nbsp;Network Fundamentals <span style="color:#3500d3;">•</span>&nbsp;Operating Systems<br>Real-time Systems <span style="color:#3500d3;">•</span>&nbsp;Computer Architecture <span style="color:#3500d3;">•</span>&nbsp;Junior Design <span style="color:#3500d3;">•</span>&nbsp;Senior Design (Capstone)</p>
+        </div>
+        <div class="container-fluid d-flex justify-content-center px-5">
+            <p class="course-text font-weight-light text-justify d-none d-sm-inline d-lg-none">Digital Systems with Artix-7 FPGA <span style="color:#3500d3;">•</span>&nbsp;Computer Organization & Structure with MIPS <span style="color:#3500d3;">•</span>&nbsp;Embedded Systems with MSP430 <span style="color:#3500d3;">•</span>&nbsp;Network Fundamentals <span style="color:#3500d3;">•</span>&nbsp;Operating Systems<br><br>Real-time Systems <span style="color:#3500d3;">•</span>&nbsp;Computer Architecture <span style="color:#3500d3;">•</span>&nbsp;Junior Design <span style="color:#3500d3;">•</span>&nbsp;Senior Design (Capstone)</p>
+        </div>
+        <div class="container-fluid d-flex justify-content-center px-5">
+            <p class="course-text font-weight-light text-justify d-sm-none">Digital Systems with Artix-7 FPGA <span style="color:#3500d3;">•</span>&nbsp;Computer Organization & Structure with MIPS<br><br>Embedded Systems with MSP430 <span style="color:#3500d3;">•</span>&nbsp;Network Fundamentals <span style="color:#3500d3;">•</span>&nbsp;Operating Systems<br><br>Real-time Systems <span style="color:#3500d3;">•</span>&nbsp;Computer Architecture <span style="color:#3500d3;">•</span>&nbsp;Junior Design <span style="color:#3500d3;">•</span>&nbsp;Senior Design (Capstone)</p>
+        </div>
+    </div>
+    <div class="container-fluid cont-style d-flex justify-content-center">
+        <a href="#sec0"><button class="btn btn-custom mr-2">Back to Top</button></a>
+        <a href="#sec3"><button class="btn btn-custom ml-2">Next Section</button></a>
+    </div>
+</section>
+<section id="sec3">
+    <div class="container-fluid">
+        <div class="container-fluid d-flex justify-content-center">
+            <h1 class="sec2-style text-center font-weight-bold d-none d-md-inline">Electrical <span style="color: #3500d3;">Coursework</span></h1>
+            <h1 class="sec2-style2 text-center font-weight-bold d-md-none">Electrical <span style="color: #3500d3;">Coursework</span></h1>
+        </div>
+        <div class="container-fluid d-flex justify-content-center">
+            <h6 class="sec2-sub text-center d-none d-md-inline">Concepts regarding basic and advanced circuit analysis and circuit design.</h6>
+            <h6 class="sec2-sub2 text-center d-md-none">Concepts regarding basic and advanced circuit analysis and circuit design.</h6>
+        </div>
+        <hr id="hr1" class="d-none d-md-flex">
+        <hr id="hr2" class="d-md-none">
+        <div class="container-fluid d-flex justify-content-center px-5 pt-3">
+            <p class="course-text font-weight-light text-center d-none d-sm-inline">Electrical Networks <span style="color:#3500d3;">•</span>&nbsp;Advanced Linear Circuits <span style="color:#3500d3;">•</span>&nbsp;Electronics with Semiconductor & Transistor Applications <span style="color:#3500d3;">•</span>&nbsp;Electronics with Op Amp Applications <span style="color:#3500d3;">•</span>&nbsp;Digital Signal Processing</p>
+        </div>
+        <div class="container-fluid d-flex justify-content-center px-5">
+            <p class="course-text font-weight-light text-justify d-sm-none">Electrical Networks <span style="color:#3500d3;">•</span>&nbsp;Advanced Linear Circuits <span style="color:#3500d3;">•</span>&nbsp;Electronics with Semiconductor & Transistor Applications <span style="color:#3500d3;">•</span>&nbsp;Electronics with Op Amp Applications <span style="color:#3500d3;">•</span>&nbsp;Digital Signal Processing</p>
+        </div>
+    </div>
+    <div class="container-fluid cont-style d-flex justify-content-center">
+        <a href="#sec0"><button class="btn btn-custom mr-2">Back to Top</button></a>
+        <a href="#sec4"><button class="btn btn-custom ml-2">Next Section</button></a>
+    </div>
+</section>
+<section id="sec4">
+    <div class="container-fluid">
+        <div class="container-fluid d-flex justify-content-center">
+            <h1 class="sec2-style text-center font-weight-bold d-none d-md-inline">Mathematics <span style="color: #3500d3;">Coursework</span></h1>
+            <h1 class="sec2-style2 text-center font-weight-bold d-md-none">Mathematics <span style="color: #3500d3;">Coursework</span></h1>
+        </div>
+        <div class="container-fluid d-flex justify-content-center">
+            <h6 class="sec2-sub text-center d-none d-md-inline">From basic calculus all the way to differential equations.</h6>
+            <h6 class="sec2-sub2 text-center d-md-none">From basic calculus all the way to differential equations.</h6>
+        </div>
+        <hr id="hr1" class="d-none d-md-flex">
+        <hr id="hr2" class="d-md-none">
+        <div class="container-fluid d-flex justify-content-center px-5 pt-3">
+            <p class="course-text font-weight-light text-center">Calculus I II & III <span style="color:#3500d3;">•</span>&nbsp;Physics with Calculus I & II <span style="color:#3500d3;">•</span>&nbsp;Statistics for Engineers <span style="color:#3500d3;">•</span>&nbsp;Differential Equations <span style="color:#3500d3;">•</span>&nbsp;Discrete Mathematics</p>
+        </div>
+    </div>
+    <div class="container-fluid cont-style d-flex justify-content-center">
+        <a href="#sec0"><button class="btn btn-custom">Back to Top</button></a>
+    </div>
+</section>
 {% endblock %}
 
 {% block scripts %}
