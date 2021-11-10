@@ -1,6 +1,14 @@
 html {
     scroll-behavior: smooth;
+}
+
+html, body {
+    max-width: 100%;
     overflow-x: hidden;
+}
+
+body {
+    max-width: 100%;
 }
 
 hr {
