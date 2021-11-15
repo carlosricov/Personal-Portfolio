@@ -28,9 +28,6 @@ hr {
 
 #sec1, #sec2, #sec3, #sec4 {
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: relative;
 }
 
@@ -55,7 +52,61 @@ hr {
     font-size: 1rem;
 }
 
-/* SVG circle placeholders. */
+/* Other section text styling. */
+.sec2-style {
+    color: white;
+    font-size: 2.5rem;
+}
+
+.sec2-style2 {
+    color: white;
+    font-size: 2rem;
+}
+
+.sec2-sub {
+    color: #282828;
+    font-size: 1.5rem;
+}
+
+.sec2-sub2 {
+    color: #282828;
+    font-size: 1rem;
+}
+
+.badge {
+    cursor: pointer;
+}
+
+/* Badge style. */
+.badge-custom1 {
+    background-color: white;
+    color: black;
+}
+
+.badge-custom2 {
+    background-color: #3500d3;
+    color: white;
+}
+
+.badge-text2 {
+    font-size: 0.6rem;
+}
+
+/* Skill name text styling based on viewport. */
+.skill-text {
+    color: #3500d3;
+    font-size: 1.25rem;
+}
+
+.skill-text2 {
+    color: #3500d3;
+    font-size: 1rem;
+}
+
+.skill-text3 {
+    color: white;
+    font-size: 0.9rem;
+}
 
 .circle {
     position: relative;
@@ -89,6 +140,16 @@ hr {
     transform: scale(1.25);
 }
 
+/* SVG styling. */
+.img-style {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    width: 100%;
+    transform:translate(-50%, -50%);
+}
+
 /* Circle connector. */
 .vert {
     position: absolute;
@@ -99,16 +160,6 @@ hr {
     width: 1px;
     z-index: -1;
     transform: translate(-50%, 0);
-}
-
-/* SVG styling. */
-.img-style {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    height: 100%;
-    width: 100%;
-    transform:translate(-50%, -50%);
 }
 
 /* SVG text styling. */
@@ -128,43 +179,6 @@ hr {
     transform: translate(0, -50%);
     color: #282828;
     font-size: 0.75rem;
-}
-
-/* Section 2 text styling. */
-.sec2-style {
-    color: white;
-    font-size: 2.5rem;
-}
-
-.sec2-style2 {
-    color: white;
-    font-size: 2rem;
-}
-
-.sec2-sub {
-    color: #282828;
-    font-size: 1.5rem;
-}
-
-.sec2-sub2 {
-    color: #282828;
-    font-size: 1rem;
-}
-
-/* Course name text styling based on viewport. */
-.course-text {
-    color: white;
-    font-size: 1rem;
-}
-
-.course-text2 {
-    color: white;
-    font-size: 0.95rem;
-}
-
-.course-text3 {
-    color: white;
-    font-size: 0.9rem;
 }
 
 /* Button style. */
