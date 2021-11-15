@@ -1,14 +1,11 @@
 html {
     scroll-behavior: smooth;
-}
-
-html, body {
     max-width: 100%;
-    overflow-x: hidden;
 }
 
 body {
     max-width: 100%;
+    overflow-x: hidden;
 }
 
 hr {
@@ -170,14 +167,7 @@ hr {
     font-size: 0.9rem;
 }
 
-/* Button placement and styling. */
-/* .cont-style {
-    position: absolute;
-    bottom: 25%;
-    left: 50%;
-    transform: translate(-50%, 0);
-} */
-
+/* Button style. */
 .btn-custom {
     background-color: transparent;
     color: white;
