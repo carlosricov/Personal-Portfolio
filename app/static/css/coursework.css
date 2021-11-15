@@ -171,12 +171,12 @@ hr {
 }
 
 /* Button placement and styling. */
-.cont-style {
+/* .cont-style {
     position: absolute;
-    bottom: 5%;
+    bottom: 25%;
     left: 50%;
     transform: translate(-50%, 0);
-}
+} */
 
 .btn-custom {
     background-color: transparent;
