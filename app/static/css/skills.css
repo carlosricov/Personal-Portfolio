@@ -1,0 +1,195 @@
+html {
+    scroll-behavior: smooth;
+    max-width: 100%;
+}
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+hr {
+    width: 100%;
+}
+
+/* Depends on viewport. */
+#hr1 {
+    border: 0.5px solid #3500d3;
+}
+
+#hr2 {
+    border: 0.25px solid #3500d3;
+}
+
+/* Section styles. */
+#sec0 {
+    height: 125vh;
+}
+
+#sec1, #sec2, #sec3, #sec4 {
+    height: 100vh;
+    position: relative;
+}
+
+/* Section 1 text style. */
+.text-style {
+    color: white;
+    font-size: 4rem;
+}
+
+.text-style2 {
+    color: white;
+    font-size: 3rem;
+}
+
+.sub-text {
+    color: #282828;
+    font-size: 1.5rem;
+}
+
+.sub-text2 {
+    color: #282828;
+    font-size: 1rem;
+}
+
+/* Other section text styling. */
+.sec2-style {
+    color: white;
+    font-size: 2.5rem;
+}
+
+.sec2-style2 {
+    color: white;
+    font-size: 2rem;
+}
+
+.sec2-sub {
+    color: #282828;
+    font-size: 1.5rem;
+}
+
+.sec2-sub2 {
+    color: #282828;
+    font-size: 1rem;
+}
+
+.badge {
+    cursor: pointer;
+}
+
+/* Badge style. */
+.badge-custom1 {
+    background-color: white;
+    color: black;
+}
+
+.badge-custom2 {
+    background-color: #3500d3;
+    color: white;
+}
+
+.badge-text2 {
+    font-size: 0.6rem;
+}
+
+/* Skill name text styling based on viewport. */
+.skill-text {
+    color: #3500d3;
+    font-size: 1.25rem;
+}
+
+.skill-text2 {
+    color: #3500d3;
+    font-size: 1rem;
+}
+
+.skill-text3 {
+    color: white;
+    font-size: 0.9rem;
+}
+
+.circle {
+    position: relative;
+    width: 3rem;
+    height: 3rem;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    background: #3500d3;
+    transition: transform .5s;
+    cursor: pointer;
+}
+
+.circle:hover {
+    transform: scale(1.25);
+}
+
+.circle2 {
+    position: relative;
+    width: 2.5rem;
+    height: 2.5rem;
+    -webkit-border-radius: 22px;
+    -moz-border-radius: 22px;
+    border-radius: 22px;
+    background: #3500d3;
+    transition: transform .5s;
+    cursor: pointer;
+}
+
+.circle2:hover {
+    transform: scale(1.25);
+}
+
+/* SVG styling. */
+.img-style {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    width: 100%;
+    transform:translate(-50%, -50%);
+}
+
+/* Circle connector. */
+.vert {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    border: 2px solid #3500d3;
+    height: 75%;
+    width: 1px;
+    z-index: -1;
+    transform: translate(-50%, 0);
+}
+
+/* SVG text styling. */
+.circ-text {
+    position: absolute;
+    top: 50%;
+    left: 125%;
+    transform: translate(0, -50%);
+    color: #282828;
+    font-size: 1rem;
+}
+
+.circ-text2 {
+    position: absolute;
+    top: 50%;
+    left: 125%;
+    transform: translate(0, -50%);
+    color: #282828;
+    font-size: 0.75rem;
+}
+
+/* Button style. */
+.btn-custom {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.btn-custom:hover {
+    background-color: #3500d3;
+    color: white;
+    border: 1px solid #3500d3;
+}

@@ -1,0 +1,416 @@
+{% extends 'base.html' %}
+
+{% block style %}
+<link rel="stylesheet" href="../static/css/skills.css">
+{% endblock %}
+
+{% block head %}
+<title>Skills</title>
+{% endblock %}
+
+{% block body %}
+<canvas id="canvas1"></canvas>
+<section id="sec0">
+    <nav id="sidebar">
+        <div id="dismiss">
+            <i class="fas fa-arrow-left"></i>
+        </div>
+        <div class="sidebar-header">
+            <div class="d-flex justify-content-center pt-3">
+                <img src="../static/img/carlos.jpg" alt="Carlos profile pic" class="img-circle shadow-lg">
+            </div>
+            <div class="container-fluid d-flex align-items-bottom justify-content-center pt-3">
+                <a class="btn btn-social-icon btn-linkedin mr-2" href="https://www.linkedin.com/in/carlosricoveri/"><span class="fab fa-linkedin"></span></a>
+                <a href="https://github.com/carlosricov" class="btn btn-social-icon btn-github"><span class="fab fa-github"></span></a>
+            </div>
+        </div>
+        <ul class="list-unstyled components pt-0">
+            <p class="font-weight-bold">Navigation Menu</p>
+            <li>
+                <a href="/portfolio">About</a>
+            </li>
+            <li>
+                <a href="/education">Education</a>
+            </li>
+            <li>
+                <a href="/coursework">Coursework</a>
+            </li>
+            <li class="active">
+                <a href="#">Skills</a>
+            </li>
+            <li>
+                <a href="#">Work Experience</a>
+            </li>
+            <li>
+                <a href="#">Projects</a>
+            </li>
+            <li>
+                <a href="https://github.com/carlosricov/Personal-Portfolio">Website Repo</a>
+            </li>
+        </ul>
+        <div class="container-fluid" id="but2">
+            <a href="../static/files/CarlosERicoveri_Resume.pdf" download><button class="btn btn-block btn-success d-flex align-items-center justify-content-center">Download Resume</button></a>
+            <div class="container-fluid text-center">
+                <p id="side-footer">Powered by <a href="https://flask.palletsprojects.com/en/2.0.x/" style="color: white; text-decoration:underline;">Flask</a>.</p>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+        <div class="container-fluid mt-3 ml-3">
+            <button type="button" id="sidebarCollapse" class="btn btn-bg-transparent text-white shadow-sm">
+                <i class="fas fa-align-left"></i>
+                <span>Toggle Sidebar</span>
+            </button>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="container-fluid d-flex justify-content-center" data-aos="fade-down" data-aos-duration="1000">
+            <h1 class="text-style font-weight-bold pt-5 d-none d-md-inline text-center">Skills</h1>
+            <h1 class="text-style2 font-weight-bold pt-5 d-md-none text-center">Skills</h1>
+        </div>
+        <div class="container-fluid d-flex justify-content-center" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500">
+            <h5 class="sub-text font-weight-bold d-none d-md-inline text-center">Programming <span style="color:#3500d3;">•</span>&nbsp;Hardware <span style="color:#3500d3;">•</span>&nbsp;Software</h5>
+            <h5 class="sub-text2 font-weight-bold d-md-none text-center">Programming <span style="color:#3500d3;">•</span>&nbsp;Hardware <span style="color:#3500d3;">•</span>&nbsp;Software</h5>
+        </div>
+    </div>
+    <div class="container-fluid pt-5" style="position: relative;">
+        <div class="container-fluid d-flex justify-content-center pt-1">
+            <div class="circle d-none d-md-flex">
+                <a href="#sec1"><img class="img-style img-circle" src="../static/img/programming.svg"></a>
+                <h6 class="circ-text">Programming Skills</h6>
+            </div>
+            <div class="circle2 d-md-none">
+                <a href="#sec1"><img class="img-style img-circle" src="../static/img/programming.svg"></a>
+                <h6 class="circ-text2">Programming</h6>
+            </div>
+        </div>
+        <div class="container-fluid d-flex justify-content-center pt-5">
+            <div class="circle d-none d-md-inline">
+                <a href="#sec2"><img class="img-style img-circle" src="../static/img/ee.svg"></a>
+                <h6 class="circ-text">Hardware Skills</h6>
+            </div>
+            <div class="circle2 d-md-none">
+                <a href="#sec2"><img class="img-style img-circle" src="../static/img/ee.svg"></a>
+                <h6 class="circ-text2">Hardware</h6>
+            </div>
+        </div>
+        <div class="container-fluid d-flex justify-content-center pt-5">
+            <div class="circle d-none d-md-inline">
+                <a href="#sec3"><img class="img-style img-circle" src="../static/img/cpe.svg"></a>
+                <h6 class="circ-text">Software Skills</h6>
+            </div>
+            <div class="circle2 d-md-none">
+                <a href="#sec3"><img class="img-style img-circle" src="../static/img/cpe.svg"></a>
+                <h6 class="circ-text2">Software</h6>
+            </div>
+        </div>
+        <div class="vert"></div>
+    </div>
+    <div class="overlay"></div>
+</section>
+<section id="sec1" class="d-flex justify-content-center align-items-center">
+    <div class="container-fluid">
+        <div class="container-fluid d-flex justify-content-center" data-aos="fade-down" data-aos-duration="1000">
+            <h1 class="sec2-style text-center font-weight-bold d-none d-md-inline">Programming <span style="color: #3500d3;">Skills</span></h1>
+            <h1 class="sec2-style2 text-center font-weight-bold d-md-none">Programming <span style="color: #3500d3;">Skills</span></h1>
+        </div>
+        <div class="container-fluid d-flex justify-content-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+            <h6 class="sec2-sub text-center d-none d-md-inline">Featuring varying types of programming languages with several frameworks and industry-standard tools.</h6>
+            <h6 class="sec2-sub2 text-center d-md-none">Programming languages, frameworks, and industry-standard tools.</h6>
+        </div>
+        <hr id="hr1" class="d-none d-md-flex" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="2000">
+        <hr id="hr2" class="d-md-none" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="2000">
+        <div class="container-fluid d-flex justify-content-start mt-5">
+            <h6 class="skill-text d-none d-md-inline font-weight-bold">Programming Languages</h6>
+            <h6 class="skill-text2 d-md-none font-weight-bold">Languages</h6>
+        </div>
+        <div class="container-fluid d-none d-md-flex justify-content-center px-5 mt-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2000">
+            <div class="text-justify">
+                <span class="text-center badge badge-custom1 mx-1">Java <span class="text-center badge badge-custom2">5 yrs</span></span>
+                <span class="text-center badge badge-custom1 mx-1">C <span class="text-center badge badge-custom2">4 yrs</span></span>
+                <span class="text-center badge badge-custom1 mx-1">Python <span class="text-center badge badge-custom2">2 yrs</span></span>
+                <span class="text-center badge badge-custom1 mx-1">Embedded C <span class="text-center badge badge-custom2">2 yrs</span></span>
+                <span class="text-center badge badge-custom1 mx-1">HTML & CSS <span class="text-center badge badge-custom2">1 yr</span></span>
+                <span class="text-center badge badge-custom1 mx-1">Shell <span class="text-center badge badge-custom2">0.5 yrs</span></span>
+                <span class="text-center badge badge-custom1 mx-1">Haskell <span class="text-center badge badge-custom2">0.5 yrs</span></span>
+                <span class="text-center badge badge-custom1 mx-1">C# <span class="text-center badge badge-custom2">0.5 yrs</span></span>
+                <span class="text-center badge badge-custom1 mx-1">R <span class="text-center badge badge-custom2">0.5 yrs</span></span>
+                <span class="text-center badge badge-custom1 mx-1">Verilog HDL <span class="text-center badge badge-custom2">0.5 yrs</span></span>
+                <span class="text-center badge badge-custom1 mx-1">MIPS Assembly Language <span class="text-center badge badge-custom2">0.5 yrs</span></span>
+            </div>
+        </div>
+        <div class="container-fluid d-flex d-md-none justify-content-center px-5 mt-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2000">
+            <div class="text-justify">
+                <span class="text-center badge badge-custom1 badge-text2 mx-1">Java <span class="text-center badge badge-custom2">5 yrs</span></span>
+                <span class="text-center badge badge-custom1 badge-text2 mx-1">C <span class="text-center badge badge-custom2">4 yrs</span></span>
+                <span class="text-center badge badge-custom1 badge-text2 mx-1">Python <span class="text-center badge badge-custom2">2 yrs</span></span>
+                <span class="text-center badge badge-custom1 badge-text2 mx-1">Embedded C <span class="text-center badge badge-custom2">2 yrs</span></span>
+                <span class="text-center badge badge-custom1 badge-text2 mx-1">HTML & CSS <span class="text-center badge badge-custom2">1 yr</span></span>
+                <span class="text-center badge badge-custom1 badge-text2 mx-1">Shell <span class="text-center badge badge-custom2">0.5 yrs</span></span>
+                <span class="text-center badge badge-custom1 badge-text2 mx-1">Haskell <span class="text-center badge badge-custom2">0.5 yrs</span></span>
+                <span class="text-center badge badge-custom1 badge-text2 mx-1">C# <span class="text-center badge badge-custom2">0.5 yrs</span></span>
+                <span class="text-center badge badge-custom1 badge-text2 mx-1">R <span class="text-center badge badge-custom2">0.5 yrs</span></span>
+                <span class="text-center badge badge-custom1 badge-text2 mx-1">Verilog <span class="text-center badge badge-custom2">0.5 yrs</span></span>
+                <span class="text-center badge badge-custom1 badge-text2 mx-1">MIPS <span class="text-center badge badge-custom2">0.5 yrs</span></span>
+            </div>
+        </div>
+        <div class="container-fluid d-flex justify-content-start mt-5">
+            <h6 class="skill-text text-center d-none d-md-inline font-weight-bold">Programming Frameworks & APIs</h6>
+            <h6 class="skill-text2 text-center d-md-none font-weight-bold">Frameworks & APIs</h6>
+        </div>
+        <div class="container-fluid d-none d-md-flex justify-content-center px-5 mt-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2000">
+            <div class="text-justify">
+                <span class="text-center badge badge-custom1 mx-1">Bootstrap 4 <span class="text-center badge badge-custom2">1 yr</span></span>
+                <span class="text-center badge badge-custom1 mx-1">Flask <span class="text-center badge badge-custom2">1 yr</span></span>
+                <span class="text-center badge badge-custom1 mx-1">REST API <span class="text-center badge badge-custom2">0.5 yrs</span></span>
+                <span class="text-center badge badge-custom1 mx-1">Selenium <span class="text-center badge badge-custom2">0.5 yrs</span></span>
+                <span class="text-center badge badge-custom1 mx-1">OpenCV <span class="text-center badge badge-custom2">0.5 yrs</span></span>
+            </div>
+        </div>
+        <div class="container-fluid d-flex d-md-none justify-content-center px-5 mt-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2000">
+            <div class="text-justify">
+                <span class="text-center badge badge-custom1 badge-text2 mx-1">Bootstrap 4 <span class="text-center badge badge-custom2">1 yr</span></span>
+                <span class="text-center badge badge-custom1 badge-text2 mx-1">Flask <span class="text-center badge badge-custom2">1 yr</span></span>
+                <span class="text-center badge badge-custom1 badge-text2 mx-1">REST API <span class="text-center badge badge-custom2">0.5 yrs</span></span>
+                <span class="text-center badge badge-custom1 badge-text2 mx-1">Selenium <span class="text-center badge badge-custom2">0.5 yrs</span></span>
+                <span class="text-center badge badge-custom1 badge-text2 mx-1">OpenCV <span class="text-center badge badge-custom2">0.5 yrs</span></span>
+            </div>
+        </div>
+        <div class="container-fluid d-flex justify-content-start mt-5">
+            <h6 class="skill-text text-center d-none d-md-inline font-weight-bold">Programming Tools & Methodologies</h6>
+            <h6 class="skill-text2 text-center d-md-none font-weight-bold">Tools & Methodologies</h6>
+        </div>
+        <div class="container-fluid d-none d-md-flex justify-content-center px-5 mt-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2000">
+            <div class="text-justify">
+                <span class="text-center badge badge-custom1 mx-1">Github <span class="text-center badge badge-custom2">2 yrs</span></span>
+                <span class="text-center badge badge-custom1 mx-1">Ubuntu Linux <span class="text-center badge badge-custom2">2 yrs</span></span>
+                <span class="text-center badge badge-custom1 mx-1">CentOS Linux <span class="text-center badge badge-custom2">1 yr</span></span>
+                <span class="text-center badge badge-custom1 mx-1">HTTP HTTPS SSH & DNS <span class="text-center badge badge-custom2">1 yr</span></span>
+                <span class="text-center badge badge-custom1 mx-1">AWS <span class="text-center badge badge-custom2">1 yr</span></span>
+                <span class="text-center badge badge-custom1 mx-1">Nginx <span class="text-center badge badge-custom2">1 yr</span></span>
+                <span class="text-center badge badge-custom1 mx-1">Docker <span class="text-center badge badge-custom2">1 yr</span></span>
+                <span class="text-center badge badge-custom1 mx-1">Gunicorn <span class="text-center badge badge-custom2">0.5 yrs</span></span>
+                <span class="text-center badge badge-custom1 mx-1">Github Actions <span class="text-center badge badge-custom2">0.5 yrs</span></span>
+                <span class="text-center badge badge-custom1 mx-1">CI/CD <span class="text-center badge badge-custom2">0.5 yrs</span></span>
+                <span class="text-center badge badge-custom1 mx-1">Jenkins <span class="text-center badge badge-custom2">0.5 yrs</span></span>
+                <span class="text-center badge badge-custom1 mx-1">Maven <span class="text-center badge badge-custom2">0.5 yrs</span></span>
+                <span class="text-center badge badge-custom1 mx-1">Agile <span class="text-center badge badge-custom2">0.5 yrs</span></span>
+            </div>
+        </div>
+        <div class="container-fluid d-flex d-md-none justify-content-center px-5 mt-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2000">
+            <div class="text-justify">
+                <span class="text-center badge badge-custom1 badge-text2 mx-1">Github <span class="text-center badge badge-custom2">2 yrs</span></span>
+                <span class="text-center badge badge-custom1 badge-text2 mx-1">Ubuntu <span class="text-center badge badge-custom2">2 yrs</span></span>
+                <span class="text-center badge badge-custom1 badge-text2 mx-1">CentOS <span class="text-center badge badge-custom2">1 yr</span></span>
+                <span class="text-center badge badge-custom1 badge-text2 mx-1">Network Protocols <span class="text-center badge badge-custom2">1 yr</span></span>
+                <span class="text-center badge badge-custom1 badge-text2 mx-1">AWS <span class="text-center badge badge-custom2">1 yr</span></span>
+                <span class="text-center badge badge-custom1 badge-text2 mx-1">Nginx <span class="text-center badge badge-custom2">1 yr</span></span>
+                <span class="text-center badge badge-custom1 badge-text2 mx-1">Docker <span class="text-center badge badge-custom2">1 yr</span></span>
+                <span class="text-center badge badge-custom1 badge-text2 mx-1">Gunicorn <span class="text-center badge badge-custom2">0.5 yrs</span></span>
+                <span class="text-center badge badge-custom1 badge-text2 mx-1">Github Actions <span class="text-center badge badge-custom2">0.5 yrs</span></span>
+                <span class="text-center badge badge-custom1 badge-text2 mx-1">CI/CD <span class="text-center badge badge-custom2">0.5 yrs</span></span>
+                <span class="text-center badge badge-custom1 badge-text2 mx-1">Jenkins <span class="text-center badge badge-custom2">0.5 yrs</span></span>
+                <span class="text-center badge badge-custom1 badge-text2 mx-1">Maven <span class="text-center badge badge-custom2">0.5 yrs</span></span>
+                <span class="text-center badge badge-custom1 badge-text2 mx-1">Agile <span class="text-center badge badge-custom2">0.5 yrs</span></span>
+            </div>
+        </div>
+        <div class="container-fluid d-none d-md-flex justify-content-center mt-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="3000">
+            <a href="#sec0"><button class="btn btn-custom mr-2">Back to Top</button></a>
+            <a href="#sec2"><button class="btn btn-custom ml-2">Next Section</button></a>
+        </div>
+        <div class="container-fluid d-flex d-md-none justify-content-center mt-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="3000">
+            <a href="#sec0"><button class="btn btn-custom mx-2">Top</button></a>
+            <a href="#sec2"><button class="btn btn-custom ml-2">Next</button></a>
+        </div>
+    </div>
+</section>
+<section id="sec2" class="d-flex justify-content-center align-items-center">
+    <div class="container-fluid">
+        <div class="container-fluid d-flex justify-content-center" data-aos="fade-down" data-aos-duration="1000">
+            <h1 class="sec2-style text-center font-weight-bold d-none d-md-inline">Hardware <span style="color: #3500d3;">Skills</span></h1>
+            <h1 class="sec2-style2 text-center font-weight-bold d-md-none">Hardware <span style="color: #3500d3;">Skills</span></h1>
+        </div>
+        <div class="container-fluid d-flex justify-content-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+            <h6 class="sec2-sub text-center d-none d-md-inline">Hardware and software used along-side circuit analysis to develop innovative solutions.</h6>
+            <h6 class="sec2-sub2 text-center d-md-none">Hardware and supporting software skills alongside applications of circuit analysis.</h6>
+        </div>
+        <hr id="hr1" class="d-none d-md-flex" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="2000">
+        <hr id="hr2" class="d-md-none" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="2000">
+        <div class="container-fluid d-flex justify-content-start mt-5">
+            <h6 class="skill-text d-none d-md-inline font-weight-bold">Hardware Devices</h6>
+            <h6 class="skill-text2 d-md-none font-weight-bold">Hardware</h6>
+        </div>
+        <div class="container-fluid d-none d-md-flex justify-content-center px-5 mt-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2000">
+            <div class="text-justify">
+                <span class="text-center badge badge-custom1 mx-1">MSP430 <span class="text-center badge badge-custom2">2 yrs</span></span>
+                <span class="text-center badge badge-custom1 mx-1">Arduino Mega2560 <span class="text-center badge badge-custom2">2 yrs</span></span>
+                <span class="text-center badge badge-custom1 mx-1">Arduino UNO <span class="text-center badge badge-custom2">1 yr</span></span>
+                <span class="text-center badge badge-custom1 mx-1">Raspberry Pi 3 <span class="text-center badge badge-custom2">1 yr</span></span>
+                <span class="text-center badge badge-custom1 mx-1">Raspberry Pi 4 <span class="text-center badge badge-custom2">1 yr</span></span>
+            </div>
+        </div>
+        <div class="container-fluid d-flex d-md-none justify-content-center px-5 mt-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2000">
+            <div class="text-justify">
+                <span class="text-center badge badge-custom1 badge-text2 mx-1">MSP430 <span class="text-center badge badge-custom2">2 yrs</span></span>
+                <span class="text-center badge badge-custom1 badge-text2 mx-1">Arduino Mega2560 <span class="text-center badge badge-custom2">2 yrs</span></span>
+                <span class="text-center badge badge-custom1 badge-text2 mx-1">Arduino UNO <span class="text-center badge badge-custom2">1 yr</span></span>
+                <span class="text-center badge badge-custom1 badge-text2 mx-1">Raspberry Pi 3 <span class="text-center badge badge-custom2">1 yr</span></span>
+                <span class="text-center badge badge-custom1 badge-text2 mx-1">Raspberry Pi 4 <span class="text-center badge badge-custom2">1 yr</span></span>
+            </div>
+        </div>
+        <div class="container-fluid d-flex justify-content-start mt-5">
+            <h6 class="skill-text text-center d-none d-md-inline font-weight-bold">Hardware Software</h6>
+            <h6 class="skill-text2 text-center d-md-none font-weight-bold">Software</h6>
+        </div>
+        <div class="container-fluid d-none d-md-flex justify-content-center px-5 mt-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2000">
+            <div class="text-justify">
+                <span class="text-center badge badge-custom1 mx-1">NI Multisim <span class="text-center badge badge-custom2">3 yrs</span></span>
+                <span class="text-center badge badge-custom1 mx-1">LTSpice <span class="text-center badge badge-custom2">2 yrs</span></span>
+                <span class="text-center badge badge-custom1 mx-1">Autodesk EAGLE <span class="text-center badge badge-custom2">0.5 yrs</span></span>
+                <span class="text-center badge badge-custom1 mx-1">Solidworks <span class="text-center badge badge-custom2">0.5 yrs</span></span>
+            </div>
+        </div>
+        <div class="container-fluid d-flex d-md-none justify-content-center px-5 mt-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2000">
+            <div class="text-justify">
+                <span class="text-center badge badge-custom1 badge-text2 mx-1">NI Multisim <span class="text-center badge badge-custom2">3 yrs</span></span>
+                <span class="text-center badge badge-custom1 badge-text2 mx-1">LTSpice <span class="text-center badge badge-custom2">2 yrs</span></span>
+                <span class="text-center badge badge-custom1 badge-text2 mx-1">Autodesk EAGLE <span class="text-center badge badge-custom2">0.5 yrs</span></span>
+                <span class="text-center badge badge-custom1 badge-text2 mx-1">Solidworks <span class="text-center badge badge-custom2">0.5 yrs</span></span>
+            </div>
+        </div>
+        <div class="container-fluid d-flex justify-content-start mt-5">
+            <h6 class="skill-text text-center d-none d-md-inline font-weight-bold">Hardware Tools</h6>
+            <h6 class="skill-text2 text-center d-md-none font-weight-bold">Tools</h6>
+        </div>
+        <div class="container-fluid d-none d-md-flex justify-content-center px-5 mt-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2000">
+            <div class="text-justify">
+                <span class="text-center badge badge-custom1 mx-1">Multimeters <span class="text-center badge badge-custom2">3 yrs</span></span>
+                <span class="text-center badge badge-custom1 mx-1">Oscilloscopes <span class="text-center badge badge-custom2">3 yrs</span></span>
+                <span class="text-center badge badge-custom1 mx-1">Breadboard <span class="text-center badge badge-custom2">3 yrs</span></span>
+                <span class="text-center badge badge-custom1 mx-1">Soldering <span class="text-center badge badge-custom2">1 yr</span></span>
+                <span class="text-center badge badge-custom1 mx-1">3D Printing <span class="text-center badge badge-custom2">1 yr</span></span>
+            </div>
+        </div>
+        <div class="container-fluid d-flex d-md-none justify-content-center px-5 mt-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2000">
+            <div class="text-justify">
+                <span class="text-center badge badge-custom1 badge-text2 mx-1">Multimeters <span class="text-center badge badge-custom2">3 yrs</span></span>
+                <span class="text-center badge badge-custom1 badge-text2 mx-1">Oscilloscopes <span class="text-center badge badge-custom2">3 yrs</span></span>
+                <span class="text-center badge badge-custom1 badge-text2 mx-1">Breadboard <span class="text-center badge badge-custom2">3 yrs</span></span>
+                <span class="text-center badge badge-custom1 badge-text2 mx-1">Soldering <span class="text-center badge badge-custom2">1 yr</span></span>
+                <span class="text-center badge badge-custom1 badge-text2 mx-1">3D Printing <span class="text-center badge badge-custom2">1 yr</span></span>
+            </div>
+        </div>
+        <div class="container-fluid d-none d-md-flex justify-content-center mt-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="3000">
+            <a href="#sec1"><button class="btn btn-custom mr-2">Prev Section</button></a>
+            <a href="#sec0"><button class="btn btn-custom mx-2">Back to Top</button></a>
+            <a href="#sec3"><button class="btn btn-custom ml-2">Next Section</button></a>
+        </div>
+        <div class="container-fluid d-flex d-md-none justify-content-center mt-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="3000">
+            <a href="#sec1"><button class="btn btn-custom mr-2">Prev</button></a>
+            <a href="#sec0"><button class="btn btn-custom mx-2">Top</button></a>
+            <a href="#sec3"><button class="btn btn-custom ml-2">Next</button></a>
+        </div>
+    </div>
+</section>
+<section id="sec3" class="d-flex justify-content-center align-items-center">
+    <div class="container-fluid">
+        <div class="container-fluid d-flex justify-content-center" data-aos="fade-down" data-aos-duration="1000">
+            <h1 class="sec2-style text-center font-weight-bold d-none d-md-inline">Software <span style="color: #3500d3;">Skills</span></h1>
+            <h1 class="sec2-style2 text-center font-weight-bold d-md-none">Software <span style="color: #3500d3;">Skills</span></h1>
+        </div>
+        <div class="container-fluid d-flex justify-content-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+            <h6 class="sec2-sub text-center d-none d-md-inline">From basic applications like MS Office to well-defined development environments like VSCode.</h6>
+            <h6 class="sec2-sub2 text-center d-md-none">IDEs, operating systems, and productive applications.</h6>
+        </div>
+        <hr id="hr1" class="d-none d-md-flex" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="2000">
+        <hr id="hr2" class="d-md-none" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="2000">
+        <div class="container-fluid d-flex justify-content-start mt-5">
+            <h6 class="skill-text d-none d-md-inline font-weight-bold">Development Environments</h6>
+            <h6 class="skill-text2 d-md-none font-weight-bold">IDEs</h6>
+        </div>
+        <div class="container-fluid d-none d-md-flex justify-content-center px-5 mt-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2000">
+            <div class="text-justify">
+                <span class="text-center badge badge-custom1 mx-1">Command Line <span class="text-center badge badge-custom2">3 yrs</span></span>
+                <span class="text-center badge badge-custom1 mx-1">Atom <span class="text-center badge badge-custom2">3 yrs</span></span>
+                <span class="text-center badge badge-custom1 mx-1">Visual Studio Code <span class="text-center badge badge-custom2">2 yrs</span></span>
+                <span class="text-center badge badge-custom1 mx-1">Code Composer Studio <span class="text-center badge badge-custom2">2 yrs</span></span>
+                <span class="text-center badge badge-custom1 mx-1">Arduino IDE <span class="text-center badge badge-custom2">2 yrs</span></span>
+                <span class="text-center badge badge-custom1 mx-1">IDLE <span class="text-center badge badge-custom2">1 yr</span></span>
+                <span class="text-center badge badge-custom1 mx-1">PyCharm <span class="text-center badge badge-custom2">1 yr</span></span>
+                <span class="text-center badge badge-custom1 mx-1">IntelliJ IDEA <span class="text-center badge badge-custom2">0.5 yrs</span></span>
+                <span class="text-center badge badge-custom1 mx-1">Android Studios <span class="text-center badge badge-custom2">0.5 yrs</span></span>
+            </div>
+        </div>
+        <div class="container-fluid d-flex d-md-none justify-content-center px-5 mt-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2000">
+            <div class="text-justify">
+                <span class="text-center badge badge-custom1 badge-text2 mx-1">Command Line <span class="text-center badge badge-custom2">3 yrs</span></span>
+                <span class="text-center badge badge-custom1 badge-text2 mx-1">Atom <span class="text-center badge badge-custom2">3 yrs</span></span>
+                <span class="text-center badge badge-custom1 badge-text2 mx-1">VSCode <span class="text-center badge badge-custom2">2 yrs</span></span>
+                <span class="text-center badge badge-custom1 badge-text2 mx-1">Code Composer Studio <span class="text-center badge badge-custom2">2 yrs</span></span>
+                <span class="text-center badge badge-custom1 badge-text2 mx-1">Arduino IDE <span class="text-center badge badge-custom2">2 yrs</span></span>
+                <span class="text-center badge badge-custom1 badge-text2 mx-1">IDLE <span class="text-center badge badge-custom2">1 yr</span></span>
+                <span class="text-center badge badge-custom1 badge-text2 mx-1">PyCharm <span class="text-center badge badge-custom2">1 yr</span></span>
+                <span class="text-center badge badge-custom1 badge-text2 mx-1">IntelliJ <span class="text-center badge badge-custom2">0.5 yrs</span></span>
+                <span class="text-center badge badge-custom1 badge-text2 mx-1">Android Studios <span class="text-center badge badge-custom2">0.5 yrs</span></span>
+            </div>
+        </div>
+        <div class="container-fluid d-flex justify-content-start mt-5">
+            <h6 class="skill-text text-center d-none d-md-inline font-weight-bold">Operating Systems</h6>
+            <h6 class="skill-text2 text-center d-md-none font-weight-bold">Operating Systems</h6>
+        </div>
+        <div class="container-fluid d-none d-md-flex justify-content-center px-5 mt-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2000">
+            <div class="text-justify">
+                <span class="text-center badge badge-custom1 mx-1">Windows <span class="text-center badge badge-custom2">6 yrs</span></span>
+                <span class="text-center badge badge-custom1 mx-1">MacOS <span class="text-center badge badge-custom2">3 yrs</span></span>
+                <span class="text-center badge badge-custom1 mx-1">Ubuntu Linux <span class="text-center badge badge-custom2">3 yrs</span></span>
+                <span class="text-center badge badge-custom1 mx-1">CentOS 8 Linux <span class="text-center badge badge-custom2">0.5 yrs</span></span>
+            </div>
+        </div>
+        <div class="container-fluid d-flex d-md-none justify-content-center px-5 mt-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2000">
+            <div class="text-justify">
+                <span class="text-center badge badge-custom1 badge-text2 mx-1">Windows <span class="text-center badge badge-custom2">6 yrs</span></span>
+                <span class="text-center badge badge-custom1 badge-text2 mx-1">MacOS <span class="text-center badge badge-custom2">3 yrs</span></span>
+                <span class="text-center badge badge-custom1 badge-text2 mx-1">Ubuntu Linux <span class="text-center badge badge-custom2">3 yrs</span></span>
+                <span class="text-center badge badge-custom1 badge-text2 mx-1">CentOS 8 Linux <span class="text-center badge badge-custom2">0.5 yrs</span></span>
+            </div>
+        </div>
+        <div class="container-fluid d-flex justify-content-start mt-5">
+            <h6 class="skill-text text-center d-none d-md-inline font-weight-bold">Productive Software</h6>
+            <h6 class="skill-text2 text-center d-md-none font-weight-bold">Productive Software</h6>
+        </div>
+        <div class="container-fluid d-none d-md-flex justify-content-center px-5 mt-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2000">
+            <div class="text-justify">
+                <span class="text-center badge badge-custom1 mx-1">Microsoft Word <span class="text-center badge badge-custom2">6 yrs</span></span>
+                <span class="text-center badge badge-custom1 mx-1">Microsoft PowerPoint <span class="text-center badge badge-custom2">6 yrs</span></span>
+                <span class="text-center badge badge-custom1 mx-1">Microsoft Excel <span class="text-center badge badge-custom2">4 yrs</span></span>
+                <span class="text-center badge badge-custom1 mx-1">Microsoft Outlook <span class="text-center badge badge-custom2">2 yrs</span></span>
+                <span class="text-center badge badge-custom1 mx-1">Microsoft Teams <span class="text-center badge badge-custom2">2 yrs</span></span>
+                <span class="text-center badge badge-custom1 mx-1">Google Calendar <span class="text-center badge badge-custom2">2 yrs</span></span>
+                <span class="text-center badge badge-custom1 mx-1">Slack <span class="text-center badge badge-custom2">2 yrs</span></span>
+                <span class="text-center badge badge-custom1 mx-1">Discord <span class="text-center badge badge-custom2">2 yrs</span></span>
+            </div>
+        </div>
+        <div class="container-fluid d-flex d-md-none justify-content-center px-5 mt-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2000">
+            <div class="text-justify">
+                <span class="text-center badge badge-custom1 badge-text2 mx-1">Multimeters <span class="text-center badge badge-custom2">3 yrs</span></span>
+                <span class="text-center badge badge-custom1 badge-text2 mx-1">Oscilloscopes <span class="text-center badge badge-custom2">3 yrs</span></span>
+                <span class="text-center badge badge-custom1 badge-text2 mx-1">Breadboard <span class="text-center badge badge-custom2">3 yrs</span></span>
+                <span class="text-center badge badge-custom1 badge-text2 mx-1">Soldering <span class="text-center badge badge-custom2">1 yr</span></span>
+                <span class="text-center badge badge-custom1 badge-text2 mx-1">3D Printing <span class="text-center badge badge-custom2">1 yr</span></span>
+            </div>
+        </div>
+        <div class="container-fluid d-none d-md-flex justify-content-center mt-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="3000">
+            <a href="#sec2"><button class="btn btn-custom mr-2">Prev Section</button></a>
+            <a href="#sec0"><button class="btn btn-custom mx-2">Back to Top</button></a>
+        </div>
+        <div class="container-fluid d-flex d-md-none justify-content-center mt-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="3000">
+            <a href="#sec2"><button class="btn btn-custom mr-2">Prev</button></a>
+            <a href="#sec0"><button class="btn btn-custom mx-2">Top</button></a>
+        </div>
+    </div>
+</section>
+{% endblock %}
+{% block scripts %}
+<script type="text/javascript" src="../static/scripts/sidebar.js"></script>
+<script src="../static/scripts/landing_script.js"></script>
+{% endblock %}
