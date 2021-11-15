@@ -259,3 +259,16 @@ html {
     color: #3500d3;
     text-decoration: underline;
 }
+
+/* Button style */
+.btn-custom {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.btn-custom:hover {
+    background-color: #3500d3;
+    color: white;
+    border: 1px solid #3500d3;
+}
