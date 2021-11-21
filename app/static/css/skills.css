@@ -12,7 +12,7 @@ hr {
     width: 100%;
 }
 
-/* Depends on viewport. */
+/* Divider style based on viewport. */
 #hr1 {
     border: 0.5px solid #3500d3;
 }
@@ -29,6 +29,27 @@ hr {
 #sec1, #sec2, #sec3, #sec4 {
     height: 100vh;
     position: relative;
+}
+
+/* Vertical responsiveness for the sections. */
+@media only screen and (max-height: 755px) {
+    #sec0 {
+        height: 250vh;
+    }
+
+    #sec1, #sec2, #sec3, #sec4 {
+        height: 210vh;
+    }
+}
+
+@media only screen and (max-height: 300px) {
+    #sec0 {
+        height: 250vh;
+    }
+
+    #sec1, #sec2, #sec3, #sec4 {
+        height: 275vh;
+    }
 }
 
 /* Section 1 text style. */
@@ -52,7 +73,7 @@ hr {
     font-size: 1rem;
 }
 
-/* Other section text styling. */
+/* Other sections text styling. */
 .sec2-style {
     color: white;
     font-size: 2.5rem;
@@ -73,11 +94,11 @@ hr {
     font-size: 1rem;
 }
 
+/* Badge styling. */
 .badge {
     cursor: pointer;
 }
 
-/* Badge style. */
 .badge-custom1 {
     background-color: white;
     color: black;
@@ -92,7 +113,7 @@ hr {
     font-size: 0.6rem;
 }
 
-/* Skill name text styling based on viewport. */
+/* Skill text styling based on viewport. */
 .skill-text {
     color: #3500d3;
     font-size: 1.25rem;
@@ -108,6 +129,7 @@ hr {
     font-size: 0.9rem;
 }
 
+/* Skill nav style. */
 .circle {
     position: relative;
     width: 3rem;
@@ -140,7 +162,7 @@ hr {
     transform: scale(1.25);
 }
 
-/* SVG styling. */
+/* Skill SVG styling. */
 .img-style {
     position: absolute;
     top: 50%;
@@ -162,7 +184,7 @@ hr {
     transform: translate(-50%, 0);
 }
 
-/* SVG text styling. */
+/* SVG text styling based on viewport. */
 .circ-text {
     position: absolute;
     top: 50%;
