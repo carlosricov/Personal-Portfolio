@@ -9,7 +9,12 @@ body {
     height: 100%;
 }
 
-/* Header style */
+#wrappp {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Header text style. */
 .title {
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -23,7 +28,6 @@ body {
     white-space: normal;
 }
 
-/* Text style */
 .word1 {
     color: #3500d3;
     font-size: 1rem;
@@ -44,6 +48,7 @@ body {
     text-decoration: underline;
 }
 
+/* Link style. */
 .bg-niceBlue {
     background: #3500d3;
     color: white;
@@ -54,16 +59,17 @@ body {
     color: white;
 }
 
+/* Page transition. */
 .transition-fade {
     transition: 0.4s;
     opacity: 1;
 }
   
-  html.is-animating .transition-fade {
+html.is-animating .transition-fade {
     opacity: 0;
 }
   
-/* Animated background */
+/* Animated background. */
 #canvas1 {
     position: fixed;
     top: 0;

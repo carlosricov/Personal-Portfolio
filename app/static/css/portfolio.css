@@ -24,6 +24,7 @@ a:focus {
     transition: all 0.3s;
 }
 
+/* Navbar styling. */
 .navbar {
     padding: 15px 10px;
     border: none;
@@ -35,13 +36,6 @@ a:focus {
     box-shadow: none;
     outline: none !important;
     border: none;
-}
-
-.line {
-    width: 100%;
-    height: 1px;
-    border-bottom: 1px dashed #ddd;
-    margin: 40px 0;
 }
 
 /* ---------------------------------------------------
@@ -177,6 +171,8 @@ a.article:hover {
     color: #fff !important;
 }
 
+/* Sidebar button styling. */
+
 .btn-success {
     background: #3500d3;
     border-color: white;
@@ -200,6 +196,8 @@ a.article:hover {
     background: red;
     border-color: red;
 }
+
+/* Sidebar image and text styling. */
 
 .img-circle {
     border-radius: 50%;
@@ -246,6 +244,7 @@ a.article:hover {
     right: 0;
 }
 
+/* Sidebar button styling. */
 #sidebarCollapse {
     border-color: white;
 }
@@ -267,6 +266,7 @@ a.article:hover {
     background: #3500d3;
 }
 
+/* Text styling. */
 #txt-cont {
     padding-left: 48px;
     padding-right: 48px;
