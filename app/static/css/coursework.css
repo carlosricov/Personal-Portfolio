@@ -34,6 +34,27 @@ hr {
     position: relative;
 }
 
+/* Vertical responsiveness for the sections. */
+@media only screen and (max-height: 755px) {
+    #sec0 {
+        height: 250vh;
+    }
+
+    #sec1, #sec2, #sec3, #sec4 {
+        height: 210vh;
+    }
+}
+
+@media only screen and (max-height: 300px) {
+    #sec0 {
+        height: 250vh;
+    }
+
+    #sec1, #sec2, #sec3, #sec4 {
+        height: 250vh;
+    }
+}
+
 /* Section 1 text style. */
 .text-style {
     color: white;
@@ -56,7 +77,6 @@ hr {
 }
 
 /* SVG circle placeholders. */
-
 .circle {
     position: relative;
     width: 3rem;
