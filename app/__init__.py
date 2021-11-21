@@ -34,6 +34,7 @@ def education():
 def coursework():
     return render_template("coursework.html")
 
+
 # Skills page.
 @app.route("/skills")
 def skills():
