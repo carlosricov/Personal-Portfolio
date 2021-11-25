@@ -1,0 +1,309 @@
+{% extends 'base.html' %}
+
+{% block style %}
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="../static/css/work.css">
+{% endblock %}
+
+{% block head %}
+<title>Work Experience Section</title>
+{% endblock %}
+
+{% block body %}
+<canvas id="canvas1"></canvas>
+<section id="sec0">
+    <nav id="sidebar">
+        <div id="dismiss">
+            <i class="fas fa-arrow-left"></i>
+        </div>
+
+        <div class="sidebar-header">
+            <div class="d-flex justify-content-center pt-3">
+                <img src="../static/img/carlos.jpg" alt="Carlos profile pic" class="img-circle shadow-lg">
+            </div>
+            <div class="container-fluid d-flex align-items-bottom justify-content-center pt-3">
+                <a class="btn btn-social-icon btn-linkedin mr-2" href="https://www.linkedin.com/in/carlosricoveri/"><span class="fab fa-linkedin"></span></a>
+                <a href="https://github.com/carlosricov" class="btn btn-social-icon btn-github"><span class="fab fa-github"></span></a>
+            </div>
+        </div>
+
+        <ul class="list-unstyled components pt-0">
+            <p class="font-weight-bold">Navigation Menu</p>
+            <li>
+                <a href="/portfolio">About</a>
+            </li>
+            <li>
+                <a href="/education">Education</a>
+            </li>
+            <li>
+                <a href="/coursework">Coursework</a>
+            </li>
+            <li>
+                <a href="/skills">Skills</a>
+            </li>
+            <li class="active">
+                <a href="#">Experience</a>
+            </li>
+            <li>
+                <a href="#">Projects</a>
+            </li>
+            <li>
+                <a href="https://github.com/carlosricov/Personal-Portfolio" target="_blank">Website Repo</a>
+            </li>
+        </ul>
+        <div class="container-fluid" id="but2">
+            <a href="../static/files/CarlosERicoveri_Resume.pdf" download><button class="btn btn-block btn-success d-flex align-items-center justify-content-center">Download Resume</button></a>
+            <div class="container-fluid text-center">
+                <p id="side-footer">Powered by <a href="https://flask.palletsprojects.com/en/2.0.x/" style="color: white; text-decoration:underline;">Flask</a>.</p>
+            </div>
+        </div>
+    </nav>
+    <div class="wrap" id="wrap1">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+            <div class="container-fluid mt-3 ml-3">
+                <button type="button" id="sidebarCollapse" class="btn btn-bg-transparent text-white shadow-sm">
+                    <i class="fas fa-align-left"></i>
+                    <span>Toggle Sidebar</span>
+                </button>
+            </div>
+        </nav>
+    </div>
+    <div class="container-fluid d-flex justify-content-center px-5">
+        <div class="container-fluid">
+            <div class="container-fluid text-center" data-aos="fade-down" data-aos-duration="1000">
+                <h1 class="text-style font-weight-bold d-none d-md-inline">Experience</h1>
+                <h1 class="text-style2 font-weight-bold d-md-none">Experience</h1>
+            </div>
+            <div class="container-fluid text-center mt-2" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500">
+                <h5 class="sub-text font-weight-bold d-none d-md-inline">Work Experience <span style="color: #3500d3;">• </span>Campus Involvement <span style="color: #3500d3;">• </span>Community Service</h5>
+                <h5 class="sub-text2 font-weight-bold d-md-none">Work Exp <span style="color: #3500d3;">• </span>Campus Involvement <span style="color: #3500d3;">• </span>Comm Service</h5>
+            </div>
+            <div class="container-fluid pt-5" style="position: relative;" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="1500">
+                <div class="container-fluid d-flex justify-content-center pt-1">
+                    <div class="circle d-none d-md-flex">
+                        <a href="#sec1"><img class="img-style img-circle" src="../static/img/job.svg"></a>
+                        <h6 class="circ-text">Work Experience</h6>
+                    </div>
+                    <div class="circle2 d-md-none">
+                        <a href="#sec1"><img class="img-style img-circle" src="../static/img/job.svg"></a>
+                        <h6 class="circ-text2">Work Exp.</h6>
+                    </div>
+                </div>
+                <div class="container-fluid d-flex justify-content-center pt-5">
+                    <div class="circle d-none d-md-inline">
+                        <a href="#sec2"><img class="img-style img-circle" src="../static/img/tt.svg"></a>
+                        <h6 class="circ-text">Campus Involvement</h6>
+                    </div>
+                    <div class="circle2 d-md-none">
+                        <a href="#sec2"><img class="img-style img-circle" src="../static/img/tt.svg"></a>
+                        <h6 class="circ-text2">Campus Orgs.</h6>
+                    </div>
+                </div>
+                <div class="container-fluid d-flex justify-content-center pt-5">
+                    <div class="circle d-none d-md-inline">
+                        <a href="#sec3"><img class="img-style img-circle" src="../static/img/recycle.svg"></a>
+                        <h6 class="circ-text">Community Service</h6>
+                    </div>
+                    <div class="circle2 d-md-none">
+                        <a href="#sec3"><img class="img-style img-circle" src="../static/img/recycle.svg"></a>
+                        <h6 class="circ-text2">Comm. Service</h6>
+                    </div>
+                </div>
+                <div class="vert"></div>
+            </div>
+        </div>
+    </div>
+    <div class="overlay"></div>
+</section>
+<section id="sec1">
+    <div class="container-fluid d-flex justify-content-center px-5 py-5">
+        <div class="container-fluid">
+            <div class="container-fluid text-center" data-aos="fade-down" data-aos-duration="1000">
+                <h1 class="sec2-style d-none d-md-inline font-weight-bold">Work&nbsp;<span style="color: #3500d3;">Experience</span></h1>
+                <h1 class="sec2-style2 d-md-none font-weight-bold">Work&nbsp;<span style="color: #3500d3;">Exp.</span></h1>
+            </div>
+            <div class="container-fluid mt-5" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
+                <div class="container-fluid d-flex justify-content-start">
+                    <a href="https://www.americanexpress.com/" target="_blank">
+                        <h3 class="job-text d-none d-md-inline font-weight-bold">American Express</h3>
+                        <h3 class="job-text2 d-md-none font-weight-bold text-center">American Express</h3>
+                    </a>
+                </div>
+                <div class="container-fluid d-flex justify-content-start">
+                    <h6 class="sec2-sub d-none d-md-inline font-weight-bold">Software Engineer <span style="color: #3500d3;">• </span><span class="font-weight-light">Aug 2021 <span style="color: #3500d3;">- </span><em>Present</em></span></h6>
+                    <h6 class="sec2-sub2 d-md-none font-weight-bold text-center">SWE <span style="color: #3500d3;">• </span><span class="font-weight-light">Aug 2021 <span style="color: #3500d3;">- </span><em>Present</em></span></h6>
+                </div>
+            </div>
+            <div class="container-fluid mt-4" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
+                <div class="container-fluid d-flex justify-content-start">
+                    <a href="https://mlh.io/" target="_blank">
+                        <h3 class="job-text d-none d-md-inline font-weight-bold">Major League Hacking</h3>
+                        <h3 class="job-text2 d-md-none font-weight-bold text-center">Major League Hacking</h3>
+                    </a>
+                </div>
+                <div class="container-fluid d-flex justify-content-start">
+                    <h6 class="sec2-sub d-none d-md-inline font-weight-bold">Production Engineer Fellow <span style="color: #3500d3;">• </span><span class="font-weight-light">Jun 2021 <span style="color: #3500d3;">- </span>Aug 2021</span></h6>
+                    <h6 class="sec2-sub2 d-md-none font-weight-bold text-center">PE Fellow <span style="color: #3500d3;">• </span><span class="font-weight-light">Jun 2021 <span style="color: #3500d3;">- </span>Aug 2021</span></h6>
+                </div>
+            </div>
+            <div class="container-fluid mt-4" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
+                <div class="container-fluid d-flex justify-content-start">
+                    <a href="https://ucf.edu" target="_blank">
+                        <h3 class="job-text d-none d-md-inline font-weight-bold">University of Central Florida</h3>
+                        <h3 class="job-text2 d-md-none font-weight-bold">University of Central Florida</h3>
+                    </a>
+                </div>
+                <div class="container-fluid d-flex justify-content-start">
+                    <h6 class="sec2-sub d-none d-md-inline font-weight-bold">Global Expert <span style="color: #3500d3;">• </span><span class="font-weight-light">Jan 2020 <span style="color: #3500d3;">- </span>Apr 2021</span></h6>
+                    <h6 class="sec2-sub2 d-md-none font-weight-bold text-center">Global Expert <span style="color: #3500d3;">• </span><span class="font-weight-light">Jan 2020 <span style="color: #3500d3;">- </span>Apr 2021</span></h6>
+                </div>
+            </div>
+            <div class="container-fluid mt-4" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
+                <div class="container-fluid d-flex justify-content-start">
+                    <a href="https://www.universalorlando.com/web/en/us" target="_blank">
+                        <h3 class="job-text d-none d-md-inline font-weight-bold">Universal Orlando</h3>
+                        <h3 class="job-text2 d-md-none font-weight-bold text-center">Universal Orlando</h3>
+                    </a>
+                </div>
+                <div class="container-fluid d-flex justify-content-start">
+                    <h6 class="sec2-sub d-none d-md-inline font-weight-bold">Merchandise Specialist <span style="color: #3500d3;">• </span><span class="font-weight-light">Apr 2018 <span style="color: #3500d3;">- </span>Mar 2019</span></h6>
+                    <h6 class="sec2-sub2 d-md-none font-weight-bold text-center">Merch Specialist <span style="color: #3500d3;">• </span><span class="font-weight-light">Apr 2018 <span style="color: #3500d3;">- </span>Mar 2019</span></h6>
+                </div>
+            </div>
+            <div class="container-fluid mt-5 d-none d-md-flex justify-content-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+                <a href="#sec0"><button class="btn btn-custom mr-2">Back to Top</button></a>
+                <a href="#sec2"><button class="btn btn-custom ml-2">Next Section</button></a>
+            </div>
+            <div class="container-fluid mt-5 d-flex d-md-none justify-content-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+                <a href="#sec0"><button class="btn btn-custom mr-2">Top</button></a>
+                <a href="#sec2"><button class="btn btn-custom ml-2">Next</button></a>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="sec2">
+    <div class="container-fluid d-flex justify-content-center px-5 py-5">
+        <div class="container-fluid">
+            <div class="container-fluid text-center" data-aos="fade-down" data-aos-duration="1000">
+                <h1 class="sec2-style d-none d-md-inline font-weight-bold">Campus&nbsp;<span style="color: #3500d3;">Involvement</span></h1>
+                <h1 class="sec2-style2 d-md-none font-weight-bold">Campus&nbsp;<span style="color: #3500d3;">Orgs.</span></h1>
+            </div>
+            <div class="container-fluid mt-5" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
+                <div class="container-fluid d-flex justify-content-start">
+                    <a href="https://www.thetataupg.org/" target="_blank">
+                        <h3 class="job-text d-none d-md-inline font-weight-bold">Theta Tau Professional Engineering Fraternity</h3>
+                        <h3 class="job-text2 d-md-none font-weight-bold">Theta Tau</h3>
+                    </a>
+                </div>
+                <div class="container-fluid d-flex justify-content-start">
+                    <h6 class="sec2-sub d-none d-md-inline font-weight-bold">Professional Development & Member Activities Boards <span style="color: #3500d3;">• </span><span class="font-weight-light">Nov 2019 <span style="color: #3500d3;">- </span><em>Present</em></span></h6>
+                    <h6 class="sec2-sub2 d-md-none font-weight-bold">PD & Brother Boards<br><span class="font-weight-light">Nov 2019 <span style="color: #3500d3;">- </span><em>Present</em></span></h6>
+                </div>
+            </div>
+            <div class="container-fluid mt-4" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
+                <div class="container-fluid d-flex justify-content-start">
+                    <a href="https://ieee.cecs.ucf.edu/" target="_blank">
+                        <h3 class="job-text d-none d-md-inline font-weight-bold">Institute of Electrical and Electronics Engineers</h3>
+                        <h3 class="job-text2 d-md-none font-weight-bold">IEEE UCF</h3>
+                    </a>
+                </div>
+                <div class="container-fluid d-flex justify-content-start">
+                    <h6 class="sec2-sub d-none d-md-inline font-weight-bold">Professional Development Chair <span style="color: #3500d3;">• </span><span class="font-weight-light">Aug 2020 <span style="color: #3500d3;">- </span>May 2021</span></h6>
+                    <h6 class="sec2-sub2 d-md-none font-weight-bold">PD Chair<br><span class="font-weight-light">Aug 2020 <span style="color: #3500d3;">- </span>May 2021</span></h6>
+                </div>
+            </div>
+            <div class="container-fluid mt-4" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
+                <div class="container-fluid d-flex justify-content-start">
+                    <a href="https://shpeucf.com/" target="_blank">
+                        <h3 class="job-text d-none d-md-inline font-weight-bold">Society of Hispanic Professional Engineers</h3>
+                        <h3 class="job-text2 d-md-none font-weight-bold">SHPE UCF</h3>
+                    </a>
+                </div>
+                <div class="container-fluid d-flex justify-content-start">
+                    <h6 class="sec2-sub d-none d-md-inline font-weight-bold">Member <span style="color: #3500d3;">• </span><span class="font-weight-light">Nov 2019 <span style="color: #3500d3;">- </span>May 2021</span></h6>
+                    <h6 class="sec2-sub2 d-md-none font-weight-bold">Member<br><span class="font-weight-light">Nov 2019 <span style="color: #3500d3;">- </span>May 2021</span></h6>
+                </div>
+            </div>
+            <div class="container-fluid mt-4" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
+                <div class="container-fluid d-flex justify-content-start">
+                    <a href="https://knightconnect.campuslabs.com/engage/organization/VENSA" target="_blank">
+                        <h3 class="job-text d-none d-md-inline font-weight-bold">Venezuelan Student Association</h3>
+                        <h3 class="job-text2 d-md-none font-weight-bold">VenSA UCF</h3>
+                    </a>
+                </div>
+                <div class="container-fluid d-flex justify-content-start">
+                    <h6 class="sec2-sub d-none d-md-inline font-weight-bold">Member <span style="color: #3500d3;">• </span><span class="font-weight-light">Aug 2017 <span style="color: #3500d3;">- </span>Aug 2018</span></h6>
+                    <h6 class="sec2-sub2 d-md-none font-weight-bold">Member<br><span class="font-weight-light">Aug 2017 <span style="color: #3500d3;">- </span>Aug 2018</span></h6>
+                </div>
+            </div>
+            <div class="container-fluid mt-5 d-none d-md-flex justify-content-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+                <a href="#sec1"><button class="btn btn-custom mr-2">Previous Section</button></a>
+                <a href="#sec0"><button class="btn btn-custom mx-2">Back to Top</button></a>
+                <a href="#sec3"><button class="btn btn-custom ml-2">Next Section</button></a>
+            </div>
+            <div class="container-fluid mt-5 d-flex d-md-none justify-content-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+                <a href="#sec1"><button class="btn btn-custom mr-2">Prev</button></a>
+                <a href="#sec0"><button class="btn btn-custom mx-2">Top</button></a>
+                <a href="#sec3"><button class="btn btn-custom ml-2">Next</button></a>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="sec3">
+    <div class="container-fluid d-flex justify-content-center px-5 py-5">
+        <div class="container-fluid">
+            <div class="container-fluid text-center" data-aos="fade-down" data-aos-duration="1000">
+                <h1 class="sec2-style d-none d-md-inline font-weight-bold">Community&nbsp;<span style="color: #3500d3;">Service</span></h1>
+                <h1 class="sec2-style2 d-md-none font-weight-bold">Comm.&nbsp;<span style="color: #3500d3;">Service</span></h1>
+            </div>
+            <div class="container-fluid mt-5" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
+                <div class="container-fluid d-flex justify-content-start">
+                    <h3 class="job-text d-none d-md-inline font-weight-bold">Beach Cleanups @ Cocoa Beach, FL</h3>
+                    <h3 class="job-text2 d-md-none font-weight-bold">Beach Cleanups</h3>
+                </div>
+                <div class="container-fluid d-flex justify-content-start">
+                    <h6 class="sec2-sub d-none d-md-inline font-weight-bold">SHPE UCF <span style="color: #3500d3;">• </span><span class="font-weight-light">Sep 2019 <span style="color: #3500d3;">- </span>Dec 2019</span></h6>
+                    <h6 class="sec2-sub2 d-md-none font-weight-bold">SHPE UCF<br><span class="font-weight-light">Sep 2019 <span style="color: #3500d3;">- </span>Dec 2019</span></h6>
+                </div>
+            </div>
+            <div class="container-fluid mt-4" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
+                <div class="container-fluid d-flex justify-content-start">
+                    <h3 class="job-text d-none d-md-inline font-weight-bold">Care Package for Venezuela</h3>
+                    <h3 class="job-text2 d-md-none font-weight-bold">Care Package for Vzla</h3>
+                </div>
+                <div class="container-fluid d-flex justify-content-start">
+                    <h6 class="sec2-sub d-none d-md-inline font-weight-bold">VenSA <span style="color: #3500d3;">• </span><span class="font-weight-light">May 2018 <span style="color: #3500d3;">- </span>Jul 2018</span></h6>
+                    <h6 class="sec2-sub2 d-md-none font-weight-bold">VenSA<br><span class="font-weight-light">May 2018 <span style="color: #3500d3;">- </span>Jul 2018</span></h6>
+                </div>
+            </div>
+            <div class="container-fluid mt-4" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
+                <div class="container-fluid d-flex justify-content-start">
+                    <h3 class="job-text d-none d-md-inline font-weight-bold">Student Accessability Services Notetaker</h3>
+                    <h3 class="job-text2 d-md-none font-weight-bold">SAS Notetaker</h3>
+                </div>
+                <div class="container-fluid d-flex justify-content-start">
+                    <h6 class="sec2-sub d-none d-md-inline font-weight-bold">UCF <span style="color: #3500d3;">• </span><span class="font-weight-light">Jan 2017 <span style="color: #3500d3;">- </span>Dec 2017</span></h6>
+                    <h6 class="sec2-sub2 d-md-none font-weight-bold">UCF<br><span class="font-weight-light">Jan 2017 <span style="color: #3500d3;">- </span>Dec 2017</span></h6>
+                </div>
+            </div>            
+            <div class="container-fluid mt-5 d-none d-md-flex justify-content-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+                <a href="#sec2"><button class="btn btn-custom mr-2">Previous Section</button></a>
+                <a href="#sec0"><button class="btn btn-custom ml-2">Back to Top</button></a>
+            </div>
+            <div class="container-fluid mt-5 d-flex d-md-none justify-content-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+                <a href="#sec2"><button class="btn btn-custom mr-2">Prev</button></a>
+                <a href="#sec0"><button class="btn btn-custom ml-2">Top</button></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
+
+
+{% block scripts %}
+<script type="text/javascript" src="../static/scripts/sidebar.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+<script src="../static/scripts/landing_script.js"></script>
+{% endblock %}

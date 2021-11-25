@@ -17,12 +17,12 @@ hr {
     width: 100%;
 }
 
-/* Depends on viewport. */
-#hr1 {
+/* Divider style based on viewport. */
+.hr1 {
     border: 0.5px solid #3500d3;
 }
 
-#hr2 {
+.hr2 {
     border: 0.25px solid #3500d3;
 }
 
@@ -33,9 +33,6 @@ hr {
 
 #sec1, #sec2, #sec3, #sec4 {
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: relative;
 }
 
@@ -56,7 +53,7 @@ hr {
     }
 
     #sec1, #sec2, #sec3, #sec4 {
-        height: 250vh;
+        height: 275vh;
     }
 }
 
@@ -81,7 +78,52 @@ hr {
     font-size: 1rem;
 }
 
-/* SVG circle placeholders. */
+/* Other sections text styling. */
+.sec2-style {
+    color: white;
+    font-size: 2.5rem;
+}
+
+.sec2-style2 {
+    color: white;
+    font-size: 2rem;
+}
+
+.job-text {
+    color: #3500d3;
+    font-size: 2rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.job-text:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.job-text2 {
+    color: #3500d3;
+    font-size: 1.5rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.job-text2:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.sec2-sub {
+    color: #282828;
+    font-size: 1.5rem;
+}
+
+.sec2-sub2 {
+    color: #282828;
+    font-size: 1rem;
+}
+
+/* Skill nav style. */
 .circle {
     position: relative;
     width: 3rem;
@@ -114,6 +156,16 @@ hr {
     transform: scale(1.25);
 }
 
+/* Skill SVG styling. */
+.img-style {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    width: 100%;
+    transform:translate(-50%, -50%);
+}
+
 /* Circle connector. */
 .vert {
     position: absolute;
@@ -126,17 +178,7 @@ hr {
     transform: translate(-50%, 0);
 }
 
-/* SVG styling. */
-.img-style {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    height: 100%;
-    width: 100%;
-    transform:translate(-50%, -50%);
-}
-
-/* SVG text styling. */
+/* SVG text styling based on viewport. */
 .circ-text {
     position: absolute;
     top: 50%;
@@ -153,43 +195,6 @@ hr {
     transform: translate(0, -50%);
     color: #282828;
     font-size: 0.75rem;
-}
-
-/* Section 2 text styling. */
-.sec2-style {
-    color: white;
-    font-size: 2.5rem;
-}
-
-.sec2-style2 {
-    color: white;
-    font-size: 2rem;
-}
-
-.sec2-sub {
-    color: #282828;
-    font-size: 1.5rem;
-}
-
-.sec2-sub2 {
-    color: #282828;
-    font-size: 1rem;
-}
-
-/* Course name text styling based on viewport. */
-.course-text {
-    color: white;
-    font-size: 1rem;
-}
-
-.course-text2 {
-    color: white;
-    font-size: 0.95rem;
-}
-
-.course-text3 {
-    color: white;
-    font-size: 0.9rem;
 }
 
 /* Button style. */

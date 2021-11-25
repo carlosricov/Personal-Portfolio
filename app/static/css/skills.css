@@ -1,6 +1,11 @@
 html {
     scroll-behavior: smooth;
     max-width: 100%;
+    overflow-x: hidden;
+}
+
+html.active {
+    overflow-y: hidden;
 }
 
 body {

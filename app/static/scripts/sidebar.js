@@ -7,6 +7,7 @@ $(document).ready(function () {
         $('#sidebar').removeClass('active');
         $('.overlay').removeClass('active');
         $('body').removeClass('active');
+        $('html').removeClass('active');
     });
 
     $('#sidebarCollapse').on('click', function () {
@@ -15,5 +16,6 @@ $(document).ready(function () {
         $('body').addClass('active');
         $('.collapse.in').toggleClass('in');
         $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+        $('html').addClass('active');
     });
 });
