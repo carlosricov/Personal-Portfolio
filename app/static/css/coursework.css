@@ -40,7 +40,7 @@ hr {
 }
 
 /* Vertical responsiveness for the sections. */
-@media only screen and (max-height: 755px) {
+@media only screen and (max-height: 700px) {
     #sec0 {
         height: 250vh;
     }
