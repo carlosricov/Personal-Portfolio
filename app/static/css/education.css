@@ -6,6 +6,11 @@ body {
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+html.active {
+    overflow-y: hidden;
 }
 
 /* Section styles.  */
@@ -30,7 +35,7 @@ html {
 }
 
 /* Vertical responsiveness for the sections. */
-@media only screen and (max-height: 755px) {
+@media only screen and (max-height: 700px) {
     #sec1 {
         height: 250vh;
     }
@@ -57,7 +62,7 @@ html {
 }
 
 /* Vertical responsiveness. */
-@media only screen and (max-height: 900px) {
+@media only screen and (max-height: 9999px) {
     .wrap {
         mix-blend-mode: soft-light;
     }
