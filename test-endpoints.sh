@@ -1,7 +1,7 @@
 #!/bin/bash
 
 url='https://ricoveri.duckdns.org'
-declare -a endpoints=("/" "/health" "/portfolio" "/education" "/coursework")
+declare -a endpoints=("/" "/health" "/portfolio" "/education" "/coursework" "/skills" "/experience")
 
 # Loop through each different endpoint
 for n in ${endpoints[@]}
