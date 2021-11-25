@@ -40,6 +40,7 @@ def coursework():
 def skills():
     return render_template("skills.html")
 
+
 # Work experience page.
 @app.route("/experience")
 def exp():
