@@ -18,11 +18,11 @@ hr {
 }
 
 /* Divider style based on viewport. */
-#hr1 {
+.hr1 {
     border: 0.5px solid #3500d3;
 }
 
-#hr2 {
+.hr2 {
     border: 0.25px solid #3500d3;
 }
 
@@ -89,6 +89,30 @@ hr {
     font-size: 2rem;
 }
 
+.job-text {
+    color: #3500d3;
+    font-size: 2rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.job-text:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.job-text2 {
+    color: #3500d3;
+    font-size: 1.5rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.job-text2:hover {
+    color: white;
+    text-decoration: none;
+}
+
 .sec2-sub {
     color: #282828;
     font-size: 1.5rem;
@@ -97,41 +121,6 @@ hr {
 .sec2-sub2 {
     color: #282828;
     font-size: 1rem;
-}
-
-/* Badge styling. */
-.badge {
-    cursor: pointer;
-}
-
-.badge-custom1 {
-    background-color: white;
-    color: black;
-}
-
-.badge-custom2 {
-    background-color: #3500d3;
-    color: white;
-}
-
-.badge-text2 {
-    font-size: 0.6rem;
-}
-
-/* Skill text styling based on viewport. */
-.skill-text {
-    color: #3500d3;
-    font-size: 1.25rem;
-}
-
-.skill-text2 {
-    color: #3500d3;
-    font-size: 1rem;
-}
-
-.skill-text3 {
-    color: white;
-    font-size: 0.9rem;
 }
 
 /* Skill nav style. */
