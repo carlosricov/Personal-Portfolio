@@ -1,0 +1,318 @@
+{% extends 'base.html' %}
+
+{% block style %}
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="../static/css/work.css">
+<link rel="stylesheet" href="../static/css/projects.css">
+{% endblock %}
+
+{% block head %}
+<title>Projects Section</title>
+{% endblock %}
+
+{% block body %}
+<canvas id="canvas1"></canvas>
+<section>
+    <nav id="sidebar">
+        <div id="dismiss">
+            <i class="fas fa-arrow-left"></i>
+        </div>
+        <div class="sidebar-header">
+            <div class="d-flex justify-content-center pt-3">
+                <img src="../static/img/carlos.jpg" alt="Carlos profile pic" class="img-circle shadow-lg">
+            </div>
+            <div class="container-fluid d-flex align-items-bottom justify-content-center pt-3">
+                <a class="btn btn-social-icon btn-linkedin mr-2" href="https://www.linkedin.com/in/carlosricoveri/"><span class="fab fa-linkedin"></span></a>
+                <a href="https://github.com/carlosricov" class="btn btn-social-icon btn-github"><span class="fab fa-github"></span></a>
+            </div>
+        </div>
+        <ul class="list-unstyled components pt-0">
+            <p class="font-weight-bold">Navigation Menu</p>
+            <li>
+                <a href="/portfolio">About</a>
+            </li>
+            <li>
+                <a href="/education">Education</a>
+            </li>
+            <li>
+                <a href="/coursework">Coursework</a>
+            </li>
+            <li>
+                <a href="/skills">Skills</a>
+            </li>
+            <li>
+                <a href="/experience">Experience</a>
+            </li>
+            <li class="active">
+                <a href="#">Projects</a>
+            </li>
+        </ul>
+        <div class="container-fluid" id="but2">
+            <a href="../static/files/CarlosERicoveri_Resume.pdf" download><button class="btn btn-block btn-success d-flex align-items-center justify-content-center">Download Resume</button></a>
+            <div class="container-fluid text-center">
+                <p id="side-footer">Powered by <a href="https://flask.palletsprojects.com/en/2.0.x/" style="color: white; text-decoration:underline;">Flask</a>.</p>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+        <div class="container-fluid mt-3 ml-3">
+            <button type="button" id="sidebarCollapse" class="btn btn-bg-transparent text-white shadow-sm">
+                <i class="fas fa-align-left"></i>
+                <span>Toggle Sidebar</span>
+            </button>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="container-fluid d-flex justify-content-center" data-aos="fade-down" data-aos-duration="1000">
+            <h1 class="text-style font-weight-bold pt-5 d-none d-md-inline text-center">Projects</h1>
+            <h1 class="text-style2 font-weight-bold pt-5 d-md-none text-center">Projects</h1>
+        </div>
+        <div class="container-fluid d-flex justify-content-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+            <h5 class="sub-text font-weight-bold d-none d-md-inline text-center">Software Projects <span style="color:#3500d3;">•</span>&nbsp;Hardware Projects</h5>
+            <h5 class="sub-text2 font-weight-bold d-md-none text-center">Software <span style="color:#3500d3;">•</span>&nbsp;Hardware</h5>
+        </div>
+        <div class="container-fluid d-none d-lg-flex justify-content-center mt-5">
+            <div class="container-fluid">
+                <div class="container-fluid mt-3">
+                    <div class="card-deck mx-5" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="1000">
+                        <div class="card" style="position: relative;">
+                            <a href="https://github.com/carlosricov/Personal-Portfolio" target="_blank">
+                                <img class="card-img-top" src="../static/img/portfolio.png" alt="Personal portfolio home page image">
+                            </a>
+                            <h5 class="card-title mt-3 font-weight-bold text-center">Flask Portfolio</h5>
+                            <h6 class="card-subtitle font-weight-bold text-center mb-3" style="font-style: italic;"><span class="badge">Production Engineer</span></h6>
+                            
+                            <p class="card-text text-justify mt-2 mx-4 pb-5">A Flask application that serves as a portfolio (this current website). It is fully deployed on AWS.</p>
+                            <div class="container-fluid px-0 mx-0 text-center" style="position: absolute; bottom:0;">
+                                <p class="card-foot font-weight-light text-center mb-1">Oct 2021 - Dec 2021</p>
+                            </div>
+                        </div>
+                        <div class="card" style="position: relative;">
+                            <a href="https://github.com/carlosricov/Flask-Practice-Typer-Team3" target="_blank">
+                                <img class="card-img-top" src="../static/img/practicetyper.png" alt="Practice Typer home page image">
+                            </a>
+                            <h5 class="card-title mt-3 font-weight-bold text-center">Practice Typer</h5>
+                            <h6 class="card-subtitle font-weight-bold text-center mb-3"><span class="badge">Frontend Engineer</span></h6>
+                            <p class="card-text text-justify mt-2 mx-4 pb-5">A Flask application dedicated to improving programmer typing speed through practice code snippet retyping.</p>
+                            <div class="container-fluid px-0 mx-0 text-center" style="position: absolute; bottom:0;">
+                                <p class="card-foot font-weight-light text-center mb-1">Aug 2021</p>
+                            </div>
+                        </div>
+                        <div class="card" style="position: relative;">
+                            <a href="https://github.com/carlosricov/Flask-Portfolio-Website" target="_blank">
+                                <img class="card-img-top" src="../static/img/flaskblog.png" alt="Flask blog home page image">
+                            </a>
+                            <h5 class="card-title mt-3 font-weight-bold text-center">Flask Blog</h5>
+                            <h6 class="card-subtitle font-weight-bold text-center mb-3"><span class="badge">Production Engineer</span></h6>
+                            <p class="card-text text-justify mt-2 mx-4 pb-5">A Flask application that acted as both a portfolio and blog website. Featured user accounts thanks to Postgres.</p>
+                            <div class="container-fluid px-0 mx-0 text-center" style="position: absolute; bottom:0;">
+                                <p class="card-foot font-weight-light text-center mb-1">Jun 2021 - Jul 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-deck mx-5 mt-5" data-aos="fade-down" data-aos-duration="1000">
+                        <div class="card" style="position: relative;">
+                            <a href="https://tagbot31.weebly.com/" target="_blank">
+                                <img class="card-img-top" src="../static/img/tagbot.png" alt="TAG Bot home page image">
+                            </a>
+                            <h5 class="card-title mt-3 font-weight-bold text-center">TAG Bot</h5>
+                            <h6 class="card-subtitle font-weight-bold text-center mb-3"><span class="badge">Embedded Programmer</span></h6>
+                            <p class="card-text text-justify mt-2 mx-4 pb-5">A Roomba-like robot designed to allow patients to undergo physical therapy while at home. Makes use of Bluetooth and Python CV.</p>
+                            <div class="container-fluid px-0 mx-0 text-center" style="position: absolute; bottom:0;">
+                                <p class="card-foot font-weight-light text-center mb-1">Aug 2020 - Apr 2021</p>
+                            </div>
+                        </div>
+                        <div class="card" style="position: relative;">
+                            <a href="../static/files/PercentError.pdf" target="_blank">
+                                <img class="card-img-top" src="../static/img/ohm.png" alt="Ohmeter circuit drawing image">
+                            </a>
+                            <h5 class="card-title mt-3 font-weight-bold text-center">Arduino Ohmeter</h5>
+                            <h6 class="card-subtitle font-weight-bold text-center mb-3" style="font-style: italic;"><span class="badge">Hardware Engineer</span></h6>
+                            
+                            <p class="card-text text-justify mt-2 mx-4 pb-5">A rudimentary ohmeter built using an Ardunio and three resistors.</p>
+                            <div class="container-fluid px-0 mx-0 text-center" style="position: absolute; bottom:0;">
+                                <p class="card-foot font-weight-light text-center mb-1">Jun 2020</p>
+                            </div>
+                        </div>
+                        <div class="card" style="position: relative;">
+                            <a href="#">
+                                <img class="card-img-top" src="../static/img/python.png" alt="Python home page image">
+                            </a>
+                            <h5 class="card-title mt-3 font-weight-bold text-center">Student Record Updater</h5>
+                            <h6 class="card-subtitle font-weight-bold text-center mb-3" style="font-style: italic;"><span class="badge">Python Programmer</span></h6>
+                            
+                            <p class="card-text text-justify mt-2 mx-4 pb-5">A Python script that automated a process for my former postion at UCF. The script made use of the Selenium framework.</p>
+                            <div class="container-fluid px-0 mx-0 text-center" style="position: absolute; bottom:0;">
+                                <p class="card-foot font-weight-light text-center mb-1">May 2020 - Jul 2020</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-deck mx-5 mt-5 mb-5" data-aos="fade-down" data-aos-duration="1000">
+                        <div class="card" style="position: relative;">
+                            <a href="https://github.com/JakeCode11/Project-Encrypta" target="_blank">
+                                <img class="card-img-top" src="../static/img/encrypta.png" alt="Secure messaging application image">
+                            </a>
+                            <h5 class="card-title mt-3 font-weight-bold text-center">Encrypta Secure Messaging App</h5>
+                            <h6 class="card-subtitle font-weight-bold text-center mb-3"><span class="badge">Backend Engineer</span></h6>
+                            <p class="card-text text-justify mt-2 mx-4 pb-5">An Android application that features instant messaging with secure end-to-end encrpytion. The app followed an entire SDLC.</p>
+                            <div class="container-fluid px-0 mx-0 text-center" style="position: absolute; bottom:0;">
+                                <p class="card-foot font-weight-light text-center mb-1">Aug 2019 - Dec 2019</p>
+                            </div>
+                        </div>
+                        <div class="card" style="position: relative;">
+                            <a href="https://github.com/carlosricov/Java-DP" target="_blank">
+                                <img class="card-img-top" src="../static/img/rlh.png" alt="Run Like Hell depiction drawing image">
+                            </a>
+                            <h5 class="card-title mt-3 font-weight-bold text-center">Run Like Hell</h5>
+                            <h6 class="card-subtitle font-weight-bold text-center mb-3"><span class="badge">Java Programmer</span></h6>
+                            <p class="card-text text-justify mt-2 mx-4 pb-5">A Java program that lets a wizard jump to safety using non-consecutive jump blocks. Uses dynamic programming to get the wizard to safety using the largest non-consecutive sum.</p>
+                            <div class="container-fluid px-0 mx-0 text-center" style="position: absolute; bottom:0;">
+                                <p class="card-foot font-weight-light text-center mb-1">Jul 2019 - Aug 2019</p>
+                            </div>
+                        </div>
+                        <div class="card" style="position: relative;">
+                            <a href="https://github.com/carlosricov/Java-Probabilistic" target="_blank">
+                                <img class="card-img-top" src="../static/img/skiplist.png" alt="Skiplist drawing image">
+                            </a>
+                            <h5 class="card-title mt-3 font-weight-bold text-center">Skiplist</h5>
+                            <h6 class="card-subtitle font-weight-bold text-center mb-3"><span class="badge">Java Programmer</span></h6>
+                            <p class="card-text text-justify mt-2 mx-4 pb-5">A probabilistic data structure that acts as a linkedlist with O(logn) insertion, search, and deletion runtimes. The nodes in the list contain a height property that fluctuates based on the max height of the list. Max height of the list is determined by the number of nodes.</p>
+                            <div class="container-fluid px-0 mx-0 text-center" style="position: absolute; bottom:0;">
+                                <p class="card-foot font-weight-light text-center mb-1">Jun 2019</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid d-flex d-lg-none justify-content-center mt-5" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000">
+            <div class="card" style="position: relative;">
+                <a href="https://github.com/carlosricov/Personal-Portfolio" target="_blank">
+                    <img class="card-img-top" src="../static/img/portfolio.png" alt="Personal portfolio home page image">
+                </a>
+                <h5 class="card-title mt-3 font-weight-bold text-center">Flask Portfolio</h5>
+                <h6 class="card-subtitle font-weight-bold text-center mb-3" style="font-style: italic;"><span class="badge">Frontend</span><span class="badge">Backend</span></h6>
+                
+                <p class="card-text text-justify mt-2 mx-4 pb-5">A Flask application that serves as a portfolio (this current website). It is fully deployed on AWS.</p>
+                <div class="container-fluid px-0 mx-0 text-center" style="position: absolute; bottom:0;">
+                    <p class="card-foot font-weight-light text-center mb-1">Oct 2021 - Dec 2021</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid d-flex d-lg-none justify-content-center mt-5" data-aos="fade-left" data-aos-duration="1000">
+            <div class="card" style="position: relative;">
+                <a href="https://github.com/carlosricov/Flask-Practice-Typer-Team3" target="_blank">
+                    <img class="card-img-top" src="../static/img/practicetyper.png" alt="Practice Typer home page image">
+                </a>
+                <h5 class="card-title mt-3 font-weight-bold text-center">Practice Typer</h5>
+                <h6 class="card-subtitle font-weight-bold text-center mb-3"><span class="badge">Frontend</span></h6>
+                <p class="card-text text-justify mt-2 mx-4 pb-5">A Flask application dedicated to improving programmer typing speed through practice code snippet retyping.</p>
+                <div class="container-fluid px-0 mx-0 text-center" style="position: absolute; bottom:0;">
+                    <p class="card-foot font-weight-light text-center mb-1">Aug 2021</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid d-flex d-lg-none justify-content-center mt-5" data-aos="fade-right" data-aos-duration="1000">
+            <div class="card" style="position: relative;">
+                <a href="https://github.com/carlosricov/Flask-Portfolio-Website" target="_blank">
+                    <img class="card-img-top" src="../static/img/flaskblog.png" alt="Flask blog home page image">
+                </a>
+                <h5 class="card-title mt-3 font-weight-bold text-center">Flask Blog</h5>
+                <h6 class="card-subtitle font-weight-bold text-center mb-3"><span class="badge">Production Engineer</span></h6>
+                <p class="card-text text-justify mt-2 mx-4 pb-5">A Flask application that acted as both a portfolio and blog website. Featured user accounts thanks to Postgres.</p>
+                <div class="container-fluid px-0 mx-0 text-center" style="position: absolute; bottom:0;">
+                    <p class="card-foot font-weight-light text-center mb-1">Jun 2021 - Jul 2021</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid d-flex d-lg-none justify-content-center mt-5" data-aos="fade-left" data-aos-duration="1000">
+            <div class="card" style="position: relative;">
+                <a href="https://tagbot31.weebly.com/" target="_blank">
+                    <img class="card-img-top" src="../static/img/tagbot.png" alt="TAG Bot home page image">
+                </a>
+                <h5 class="card-title mt-3 font-weight-bold text-center">TAG Bot</h5>
+                <h6 class="card-subtitle font-weight-bold text-center mb-3"><span class="badge">Embedded Programmer</span></h6>
+                <p class="card-text text-justify mt-2 mx-4 pb-5">A Roomba-like robot designed to allow patients to undergo physical therapy while at home. Makes use of Bluetooth and Python CV.</p>
+                <div class="container-fluid px-0 mx-0 text-center" style="position: absolute; bottom:0;">
+                    <p class="card-foot font-weight-light text-center mb-1">Aug 2020 - Apr 2021</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid d-flex d-lg-none justify-content-center mt-5" data-aos="fade-right" data-aos-duration="1000">
+            <div class="card" style="position: relative;">
+                <a href="../static/files/PercentError.pdf" target="_blank">
+                    <img class="card-img-top" src="../static/img/ohm.png" alt="Ohmeter circuit drawing image">
+                </a>
+                <h5 class="card-title mt-3 font-weight-bold text-center">Arduino Ohmeter</h5>
+                <h6 class="card-subtitle font-weight-bold text-center mb-3" style="font-style: italic;"><span class="badge">Hardware Engineer</span></h6>
+                
+                <p class="card-text text-justify mt-2 mx-4 pb-5">A rudimentary ohmeter built using an Ardunio and three resistors.</p>
+                <div class="container-fluid px-0 mx-0 text-center" style="position: absolute; bottom:0;">
+                    <p class="card-foot font-weight-light text-center mb-1">Jun 2020</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid d-flex d-lg-none justify-content-center mt-5" data-aos="fade-left" data-aos-duration="1000">
+            <div class="card" style="position: relative;">
+                <a href="#">
+                    <img class="card-img-top" src="../static/img/python.png" alt="Python home page image">
+                </a>
+                <h5 class="card-title mt-3 font-weight-bold text-center">Student Record Updater</h5>
+                <h6 class="card-subtitle font-weight-bold text-center mb-3" style="font-style: italic;"><span class="badge">Python Programmer</span></h6>
+                
+                <p class="card-text text-justify mt-2 mx-4 pb-5">A Python script that automated a process for my former postion at UCF. The script made use of the Selenium framework.</p>
+                <div class="container-fluid px-0 mx-0 text-center" style="position: absolute; bottom:0;">
+                    <p class="card-foot font-weight-light text-center mb-1">May 2020 - Jul 2020</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid d-flex d-lg-none justify-content-center mt-5" data-aos="fade-right" data-aos-duration="1000">
+            <div class="card" style="position: relative;">
+                <a href="https://github.com/JakeCode11/Project-Encrypta" target="_blank">
+                    <img class="card-img-top" src="../static/img/encrypta.png" alt="Secure messaging application image">
+                </a>
+                <h5 class="card-title mt-3 font-weight-bold text-center">Encrypta Secure Messaging App</h5>
+                <h6 class="card-subtitle font-weight-bold text-center mb-3"><span class="badge">Backend Engineer</span></h6>
+                <p class="card-text text-justify mt-2 mx-4 pb-5">An Android application that features instant messaging with secure end-to-end encrpytion. The app followed an entire SDLC.</p>
+                <div class="container-fluid px-0 mx-0 text-center" style="position: absolute; bottom:0;">
+                    <p class="card-foot font-weight-light text-center mb-1">Aug 2019 - Dec 2019</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid d-flex d-lg-none justify-content-center mt-5" data-aos="fade-left" data-aos-duration="1000">
+            <div class="card" style="position: relative;">
+                <a href="https://github.com/carlosricov/Java-DP" target="_blank">
+                    <img class="card-img-top" src="../static/img/rlh.png" alt="Run Like Hell depiction drawing image">
+                </a>
+                <h5 class="card-title mt-3 font-weight-bold text-center">Run Like Hell</h5>
+                <h6 class="card-subtitle font-weight-bold text-center mb-3"><span class="badge">Java Programmer</span></h6>
+                <p class="card-text text-justify mt-2 mx-4 pb-5">A Java program that lets a wizard jump to safety using non-consecutive jump blocks. Uses dynamic programming to get the wizard to safety using the largest non-consecutive sum.</p>
+                <div class="container-fluid px-0 mx-0 text-center" style="position: absolute; bottom:0;">
+                    <p class="card-foot font-weight-light text-center mb-1">Jul 2019 - Aug 2019</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid d-flex d-lg-none justify-content-center my-5" data-aos="fade-right" data-aos-duration="1000">
+            <div class="card" style="position: relative;">
+                <a href="https://github.com/carlosricov/Java-Probabilistic" target="_blank">
+                    <img class="card-img-top" src="../static/img/skiplist.png" alt="Skiplist drawing image">
+                </a>
+                <h5 class="card-title mt-3 font-weight-bold text-center">Skiplist</h5>
+                <h6 class="card-subtitle font-weight-bold text-center mb-3"><span class="badge">Java Programmer</span></h6>
+                <p class="card-text text-justify mt-2 mx-4 pb-5">A probabilistic data structure that acts as a linkedlist with O(logn) insertion, search, and deletion runtimes. The nodes in the list contain a height property that fluctuates based on the max height of the list. Max height of the list is determined by the number of nodes.</p>
+                <div class="container-fluid px-0 mx-0 text-center" style="position: absolute; bottom:0;">
+                    <p class="card-foot font-weight-light text-center mb-1">Jun 2019</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="overlay"></div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script type="text/javascript" src="../static/scripts/sidebar.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+<script src="../static/scripts/landing_script.js"></script>
+{% endblock %}
