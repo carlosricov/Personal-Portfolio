@@ -46,6 +46,7 @@ def skills():
 def exp():
     return render_template("experience.html")
 
+
 # Projects page.
 @app.route("/projects")
 def projects():
