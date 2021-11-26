@@ -1,0 +1,26 @@
+/* Card styling. */
+.card {
+    border: 5px solid #282828;
+    background-color: #3500d3;
+    width: 17rem;
+}
+
+.card-img-top {
+    height: 100%;
+}
+
+.card-title {
+    color: #0c0032;
+    font-size: 1.5rem;
+}
+
+.card-subtitle {
+    color: #190061;
+    font-style: italic;
+}
+
+.card-foot {
+    color: #190061;
+    font-style: italic;
+    font-size: 1rem;
+}
